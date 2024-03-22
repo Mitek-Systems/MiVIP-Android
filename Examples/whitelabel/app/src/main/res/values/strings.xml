@@ -1,0 +1,735 @@
+<resources>
+    <string name="app_name">Mitek demo</string>
+
+<!--    Mitek Endpoints configuration for DEV -->
+    <string name="mivip_url" translatable="false">MIVIP_RNDPOINT_URL</string>
+
+<!--    Тo use misnap capture functionality - you have to get a licence key for using it. -->
+    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>
+
+
+    <!--    MiVIP / MiSnap SDK texts -->
+    <!--    MiSnap Strings-->
+    <string name="misnap_camera_permission_title_ux2">Permission Reason</string>
+    <string name="misnap_camera_permission_rationale_ux2">Camera access is required to snap a photo of your document.</string>
+    <string name="misnap_video_session_timeout_first_btn_string_ux2">Cancel</string>
+    <string name="misnap_video_session_timeout_second_btn_string_ux2">Try Again</string>
+    <string name="misnap_detailed_failover_title_ux2">We couldn\'t find a clean image.</string>
+    <string name="misnap_detailed_failover_first_btn_string_ux2">Cancel Capture</string>
+    <string name="misnap_detailed_failover_second_btn_string_ux2">Capture Manually</string>
+    <string name="misnap_detailed_failover_third_btn_string_ux2">Retry Autocapture</string>
+    <string name="misnap_video_help_first_btn_string_ux2">Cancel</string>
+    <string name="misnap_video_help_second_btn_string_ux2">Continue</string>
+    <string name="misnap_video_ft_second_btn_string_ux2">Continue</string>
+    <string name="misnap_manual_help_first_btn_string_ux2">Cancel</string>
+    <string name="misnap_manual_help_second_btn_string_ux2">Continue</string>
+    <string name="misnap_manual_ft_second_btn_string_ux2">Continue</string>
+    <string name="misnap_multi_tap_first_btn_string_ux2">Cancel</string>
+    <string name="misnap_multi_tap_second_btn_string_ux2">Continue</string>
+    <string name="misnap_check_front_text_ux2">Front of Check</string>
+    <string name="misnap_check_back_text_ux2">Back of Check</string>
+    <string name="misnap_default_text_ux2"></string>
+    <string name="misnap_bug_message_ux2">Captured!</string>
+    <string name="misnap_auto_capture_not_supported_ux2">This device does not support auto-capture mode. Press the snap photo button when you are ready to snap a picture.</string>
+
+    <!-- For MiSnap hint messages -->
+    <string name="misnap_more_light_ux2">Move to a well-lit area</string>
+    <string name="misnap_less_light_ux2">Too bright</string>
+    <string name="misnap_hold_steady_ux2">Hold steady</string>
+    <string name="misnap_get_closer_generic_ux2">Move closer</string>
+    <string name="misnap_too_close_generic_ux2">Move farther away</string>
+    <string name="misnap_hold_center_generic_ux2">Reduce angle</string>
+    <string name="misnap_glare_ux2">Reduce glare</string>
+    <string name="misnap_busy_background_ux2">Center document on a plain background</string>
+    <string name="misnap_low_contrast_ux2">Use a dark background</string>
+    <string name="misnap_wrong_doc_generic_ux2">Center the document</string>
+    <string name="misnap_wrong_doc_check_back_expected_ux2">Flip check over</string>
+    <string name="misnap_wrong_doc_check_front_expected_ux2">Use front of check</string>
+    <string name="misnap_bad_orientation_ux2">Turn Document 90 Degrees</string>
+    <string name="misnap_tap_now_ux2">Tap now</string>
+
+    <string name="misnap_overlay_flash_on_ux2">Flash is on</string>
+    <string name="misnap_overlay_flash_off_ux2">Flash is off</string>
+    <string name="misnap_overlay_help_ux2">Help</string>
+    <string name="misnap_overlay_cancel_ux2">Cancel</string>
+    <string name="misnap_overlay_capture_ux2">Snap Photo</string>
+    <string name="misnap_manual_capture_please_wait_ux2">Hold still, please wait…</string>
+    <string name="misnap_video_ft_message_ux2"><![CDATA[Hold still. <b><i>We\'ll take the photo for you</i></b>]]></string>
+
+    <!-- For optional workflow changes -->
+    <string name="misnap_seamless_failover_ux2">Switched to manual capture mode. Press the Snap Photo button when ready.</string>
+
+    <!--Workflow display strings-->
+    <string name="misnap_video_help_message_1_check_ux2">Center check on dark surface</string>
+    <string name="misnap_video_help_message_1_license_ux2">Center document on dark surface</string>
+    <string name="misnap_video_help_message_1_passport_ux2">Center passport on dark surface</string>
+    <string name="misnap_video_help_message_1_document_ux2">Center document on dark surface</string>
+    <string name="misnap_video_help_message_2_ux2">Provide ample light</string>
+    <string name="misnap_video_help_message_3_check_ux2">Align check and we\'ll take the photo for you</string>
+    <string name="misnap_video_help_message_3_license_ux2">Align document and we\'ll take the photo for you</string>
+    <string name="misnap_video_help_message_3_passport_ux2">Align passport and we\'ll take the photo for you</string>
+    <string name="misnap_video_help_message_3_document_ux2">Align document and we\'ll take the photo for you</string>
+
+    <string name="misnap_video_tutorial_message_1_check_ux2">Center check on dark surface</string>
+    <string name="misnap_video_tutorial_message_1_license_ux2">Center document on dark surface</string>
+    <string name="misnap_video_tutorial_message_1_passport_ux2">Center passport on dark surface</string>
+    <string name="misnap_video_tutorial_message_1_document_ux2">Center document on dark surface</string>
+    <string name="misnap_video_tutorial_message_2_ux2">Provide ample light</string>
+    <string name="misnap_video_tutorial_message_3_check_ux2">Align check and we\'ll take the photo for you</string>
+    <string name="misnap_video_tutorial_message_3_license_ux2">Align document and we\'ll take the photo for you</string>
+    <string name="misnap_video_tutorial_message_3_passport_ux2">Align passport and we\'ll take the photo for you</string>
+    <string name="misnap_video_tutorial_message_3_document_ux2">Align document and we\'ll take the photo for you</string>
+
+    <!--manual help screen strings-->
+    <string name="misnap_manual_help_message_1_document_ux2">Center document on dark surface</string>
+    <string name="misnap_manual_help_message_1_check_ux2">Center check on dark surface</string>
+    <string name="misnap_manual_help_message_1_license_ux2">Center document on dark surface</string>
+    <string name="misnap_manual_help_message_1_passport_ux2">Center passport on dark surface</string>
+    <string name="misnap_manual_help_message_2_ux2">Provide ample light</string>
+    <string name="misnap_manual_help_message_3_document_ux2">Align document, hold steady &amp; tap capture button when ready</string>
+    <string name="misnap_manual_help_message_3_check_ux2">Align check, hold steady &amp; tap capture button when ready</string>
+    <string name="misnap_manual_help_message_3_license_ux2">Align document, hold steady &amp; tap capture button when ready</string>
+    <string name="misnap_manual_help_message_3_passport_ux2">Align passport, hold steady &amp; tap capture button when ready</string>
+
+    <string name="misnap_manual_tutorial_message_1_document_ux2">Center document on dark surface</string>
+    <string name="misnap_manual_tutorial_message_1_check_ux2">Center check on dark surface</string>
+    <string name="misnap_manual_tutorial_message_1_license_ux2">Center document on dark surface</string>
+    <string name="misnap_manual_tutorial_message_1_passport_ux2">Center passport on dark surface</string>
+    <string name="misnap_manual_tutorial_message_2_ux2">Provide ample light</string>
+    <string name="misnap_manual_tutorial_message_3_document_ux2">Align document, hold steady &amp; tap capture button when ready</string>
+    <string name="misnap_manual_tutorial_message_3_check_ux2">Align check, hold steady &amp; tap capture button when ready</string>
+    <string name="misnap_manual_tutorial_message_3_license_ux2">Align document, hold steady &amp; tap capture button when ready</string>
+    <string name="misnap_manual_tutorial_message_3_passport_ux2">Align passport, hold steady &amp; tap capture button when ready</string>
+
+    <!-- For wrong document toast -->
+    <string name="misnap_wrong_document_check_front_found_ux2">Please flip the check over. Check back was expected, but check front was found.</string>
+
+    <!-- Friendly names for failure reason codes, mappedMiSnapAnalyzerResultvent -->
+    <string name="misnap_failure_reason_unknown_ux2">Center the document with all 4 corners visible</string>
+    <string name="misnap_failure_reason_four_corner_confidence_ux2">Center the document with all 4 corners visible</string>
+    <string name="misnap_failure_reason_horizontal_min_fill_ux2">Move the device closer to the document</string>
+    <string name="misnap_failure_reason_min_brightness_ux2">Place the document in a well-lit area</string>
+    <string name="misnap_failure_reason_max_brightness_ux2">Place the document in an area with less light</string>
+    <string name="misnap_failure_reason_skew_angle_ux2">Hold the device directly over the document</string>
+    <string name="misnap_failure_reason_sharpness_ux2">Hold the device steady</string>
+    <string name="misnap_failure_reason_min_padding_ux2">Move the device farther away from the document</string>
+    <string name="misnap_failure_reason_rotation_angle_ux2">Hold the device directly over the document</string>
+    <string name="misnap_failure_reason_low_contrast_ux2">Center the document on a dark background</string>
+    <string name="misnap_failure_reason_busy_background_ux2">Place the document on a plain uncluttered background</string>
+    <string name="misnap_failure_reason_wrong_doc_generic_ux2">Center the document</string>
+    <string name="misnap_failure_reason_wrong_doc_check_front_ux2">Use the front of the check with all numbers visible</string>
+    <string name="misnap_failure_reason_wrong_doc_check_back_ux2">Flip the check to scan the back</string>
+    <string name="misnap_failure_reason_glare_ux2">Avoid glare on the document</string>
+
+    <!-- For MiSnap priority hint messages -->
+    <string name="misnap_priority_glare_ux2">Reduce glare</string>
+    <string name="misnap_priority_busy_background_ux2">Use a solid background</string>
+    <string name="misnap_priority_low_contrast_ux2">Increase contrast</string>
+    <string name="misnap_priority_wrong_doc_generic_ux2">Wrong document suspected</string>
+    <string name="misnap_priority_wrong_doc_check_back_expected_ux2">Flip check over</string>
+    <string name="misnap_priority_wrong_doc_check_front_expected_ux2">Can\'t find account or routing number</string>
+
+    <!--overlay screen strings-->
+    <string name="misnap_ghost_image_remittance_ux2">Center payment stub here and wait. \n We\'ll take the photo for you</string>
+    <string name="misnap_ghost_image_remittance_manual_ux2"><![CDATA[Center payment stub here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
+    <string name="misnap_ghost_image_check_ux2"></string>
+    <string name="misnap_ghost_image_check_manual_ux2"></string>
+    <string name="misnap_ghost_image_drivers_license_ux2"></string>
+    <string name="misnap_ghost_image_drivers_license_manual_ux2"></string>
+    <string name="misnap_ghost_image_id_card_ux2"></string>
+    <string name="misnap_ghost_image_id_card_manual_ux2"></string>
+    <string name="misnap_ghost_image_insurance_card_ux2">Center insurance card here and wait. \n We\'ll take the photo for you</string>
+    <string name="misnap_ghost_image_insurance_card_manual_ux2"><![CDATA[Center insurance card here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
+    <string name="misnap_ghost_image_vin_manual_ux2"><![CDATA[Center VIN here then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
+    <string name="misnap_ghost_image_w2_ux2">Center W2 here and wait. \n We\'ll take the photo for you</string>
+    <string name="misnap_ghost_image_w2_manual_ux2"><![CDATA[Center W2 here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
+    <string name="misnap_ghost_image_passport_ux2">Center passport here and wait. \n We\'ll take the photo for you</string>
+    <string name="misnap_ghost_image_passport_manual_ux2"><![CDATA[Center passport here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
+    <string name="misnap_ghost_image_document_landscape_ux2">Center card here and wait. \n We\'ll take the photo for you</string>
+    <string name="misnap_ghost_image_document_landscape_manual_ux2"><![CDATA[Center card here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
+    <string name="misnap_ghost_image_document_portrait_ux2">Center document here and wait. \n We\'ll take the photo for you</string>
+    <string name="misnap_ghost_image_document_portrait_manual_ux2"><![CDATA[Center document here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
+    <string name="misnap_ghost_barcode_tooltip_ux2">Please scan the barcode on the back of the driver\'s document</string>
+
+    <string name="flash_on_ux2">On</string>
+    <string name="flash_off_ux2">Off</string>
+    <string name="misnap_dont_show_again_ux2">Don\'t show this again</string>
+
+    <string name="misnapWorkflowDocumentAnalysisFragmentSuccessViewLabel">Captured</string>
+    <!-- end MiSnap-->
+
+    <!-- MiVIP -->
+    <string name="gdpr_text"><![CDATA[<p><b>%s has asked Mitek to verify your ID.</b></p><p>To do this, Mitek will ask you to provide personal data including location, facial and document images. We will not share your personal data with any third party except <b>%s</b>.</p><br/><p>By clicking Agree and Continue you give your consent to the processing and sharing of your personal data including facial images. Please see our <a href="%s">terms</a> and <a href="%s">privacy policy</a>.</p>]]></string>
+    <string name="poa_already_sumbitted">You already submitted:</string>
+    <string name="poa_info_document_address_to_noname">Does this document have the applicant name and address</string>
+
+    <string name="selfie_btn_max_attempts">Image error</string>
+    <string name="selfie_max_attempts_text">Thank you for the Selfies! You can now move on to the next item.</string>
+    <string name="video_intro_broadband_unassisted"> Prior to Initialing the process, please ensure a stable broadband connection.</string>
+    <string name="video_intro_unassisted_bottom_text">Both the video and audio will be recorded throughout the session.</string>
+    <string name="video_intro_instruction_unassisted">During this video recording, we will:</string>
+    <string name="video_speed_test_ok">Speed test passed</string>
+    <string name="video_speed_test_fail">Speed test failed</string>
+    <string name="video_intro_description_unassisted">The Video ID entails a video recording involving you and our automated video platform.</string>
+    <string name="request_start_details_video_unassisted">Our automated interactive video platform will verify your identity</string>
+    <string name="video_detail_text_unassisted">Before you continue with the video call, we need a few more details:</string>
+
+    <string name="main_menu_profile">Profile</string>
+    <string name="main_menu_share">Share my data</string>
+
+    <string name="request_open_error">Not a valid identity request or the request already opened on a different device</string>
+
+    <string name="nfc_scan_nonfc_continue">Skip the %s scan</string>
+    <string name="documents_nfc_error_nfc">To scan your %s hold your phone directly against the document as instructed</string>
+
+    <string name="nfc_tip_label">%s scan tips:</string>
+    <string name="nfc_tip1">Remove your phone case if it is thick or metallic</string>
+    <string name="nfc_tip2">Hold your phone directly up against the %s until the scan is fully completed</string>
+    <string name="nfc_tip3">If %s scan doesn\'t start - restart your phone</string>
+
+    <string name="masking_main_text">Please apply a privacy filter to your document, follow the guidance of the sample provided below</string>
+    <string name="masking_sample">Sample</string>
+    <string name="masking_instruction1">Draw a line to cover the last 9 digits of the BSN number</string>
+    <string name="masking_instruction2">Use Zoom/Mask button to toggle between image zoom and masking</string>
+    <string name="masking_instruction3">Use two fingers to zoom the image and one finger to move the image when in zoom mode</string>
+    <string name="masking_instruction4">Use one finger to draw the line when in mask mode</string>
+    <string name="masking_btn_back">Back</string>
+    <string name="masking_btn_reset">Reset</string>
+    <string name="masking_btn_continue">Done</string>
+    <string name="masking_btn_zoom">Zoom</string>
+    <string name="masking_btn_mask">Mask</string>
+    <string name="masking_done_document">Your Document</string>
+    <string name="masking_confirm">Please confirm the following:</string>
+    <string name="masking_approve">Are you satisfied with the masking of your document?</string>
+    <string name="masking_action">Continue</string>
+    <string name="masking_skip">Cannot perform the task?</string>
+
+    <string name="request_info_button_voice">Voice</string>
+    <string name="voice_title">Add your voice</string>
+    <string name="voice_text">By providing your voice samples, you consent to processing of the data by Mitek.</string>
+    <string name="voice_enroll">You will be asked to capture 3 voice samples. While recording read out the phrase shown on the screen loud and clear in a quiet room.</string>
+    <string name="voice_verify">You need to capture a voice sample for verification. While recording read out the phrase shown on the screen loud and clear in a quiet room.</string>
+    <string name="voice_enroll_check">In order to prevent fraud, do you want us to keep your voice for future authentications?</string>
+    <string name="voice_action_button">Capture voice</string>
+
+    <string name="request_code_title">Verification code</string>
+    <string name="request_code_skip">I don\'t have verification code</string>
+    <string name="request_code_paste">Paste from clipboard</string>
+    <string name="request_finish">Your results have not yet been generated but they should be shortly.</string>
+    <string name="request_start_details_button_start">START</string>
+    <string name="request_start_details_mandatory">REQUIRED</string>
+    <string name="request_start_details_title">How to confirm your identity</string>
+    <string name="request_start_details_banking">Verify with your online bank account</string>
+    <string name="request_start_details_voice">You\'ll need to capture your voice</string>
+    <string name="request_start_details_video">Our certified agent will verify your identity over a video call</string>
+    <string name="request_start_details_attachments">You can use any of the following documents</string>
+    <string name="request_start_details_signature">You\'ll need to upload your signature. Please take a photo of it on a white background with black ink</string>
+    <string name="request_start_details_payment_card">You\'ll need to submit a picture of the back and front of one of your payment cards (credit or debit) Please take a photo of it on a white page</string>
+    <string name="request_start_details_poa">You can use a proof of address document</string>
+    <string name="request_start_details_documents">You can use 1 or more photo IDs</string>
+    <string name="request_start_details_social">You can use 1 or more online profiles</string>
+    <string name="request_start_details_selfie">We will guide you on how to take a selfie</string>
+
+    <string name="approve_mipass_enroll">In order to prevent fraud, do you want us to keep your selfie for future authentications?</string>
+    <string name="request_completed_button">Close</string>
+    <string name="request_info_err_selfie">Retake selfie</string>
+    <string name="request_info_err_selfie_manual">Retake selfie</string>
+
+    <string name="settings_show_name_age">Name reveal in \'Prove My Age\'</string>
+    <string name="settings_show_name_age_description">This will allow your name to be shown in the app\'s proof of age feature.</string>
+
+    <string name="cancel_request_button">Don\'t confirm</string>
+    <string name="cancel_request_title">Don\'t confirm</string>
+    <string name="cancel_request_header">Don\'t confirm my identity</string>
+    <string name="cancel_request_text">If you do not have any documents matching the full name of this request, you might need to cancel the request.</string>
+    <string name="cancel_request_text2">Click below only if you want to stop the process completely.</string>
+    <string name="cancel_request_message">Please provide a brief message we can pass onto %s:</string>
+    <string name="cancel_request_action_button">Submit and close</string>
+    <string name="cancel_request_error">Something went wrong. Please try again later</string>
+    <string name="cancel_request_status">This request has now been cancelled</string>
+    <string name="history_request_cancelled">Request cancelled</string>
+
+    <string name="bottom_menu_home">Home</string>
+    <string name="bottom_menu_history">History</string>
+    <string name="bottom_menu_settings">Settings</string>
+    <string name="bottom_menu_about">About</string>
+
+    <string name="my_id_title">My Identity</string>
+    <string name="my_id_sources">Sources</string>
+    <string name="my_id_edit">Edit</string>
+
+    <string name="my_id_name">Name</string>
+    <string name="my_id_dob">Date of birth</string>
+    <string name="my_id_address">Address</string>
+    <string name="my_id_phone">Phone</string>
+    <string name="my_id_email">Email</string>
+
+    <string name="my_id_edit_title">Edit My Identity</string>
+    <string name="my_id_edit_text">MY ID SETTINGS</string>
+    <string name="my_id_edit_name">Show name</string>
+    <string name="my_id_edit_dob">Show date of birth</string>
+    <string name="my_id_edit_address">Show address</string>
+    <string name="my_id_edit_phone">Show phone</string>
+    <string name="my_id_edit_email">Show email</string>
+    <string name="my_id_edit_name_description">When selected name will be shown in My Identity. Set to off to hide name in My Identity</string>
+    <string name="my_id_edit_dob_description">When selected date of birth will be shown in My Identity. Set to off to hide date of birth in My Identity</string>
+    <string name="my_id_edit_address_description">When selected address will be shown in My Identity. Set to off to hide address in My Identity</string>
+    <string name="my_id_edit_phone_description">When selected phone will be shown in My Identity. Set to off to hide phone in My Identity</string>
+    <string name="my_id_edit_email_description">When selected email will be shown in My Identity. Set to off to hide email in My Identity</string>
+
+    <string name="my_id_sources_social">Digital identity</string>
+
+    <string name="main_menu_button_new">Scan QR code</string>
+
+    <string name="prove_age_title">Prove my age</string>
+    <string name="prove_age_verified">VERIFIED WITH:</string>
+    <string name="prove_age_show">Show screen to prove age</string>
+    <string name="prove_age_reveal">Reveal document</string>
+
+    <string name="account_document_number">Document Nr</string>
+    <string name="history_continue_request">Continue request</string>
+    <string name="history_request_completed">Request completed</string>
+    <string name="history_request_failed">Request failed</string>
+    <string name="history_request_expired">Request expired</string>
+    <string name="account_document_stored">Stored at</string>
+
+    <string name="notifications_title">Notifications</string>
+
+    <string name="delete_notification">DELETE</string>
+    <string name="undo_delete_notification">UNDO</string>
+    <string name="delete_notification_text"><b>%s</b> notification removed</string>
+
+    <string name="history_details_auth">On %s you authenticate to %s:</string>
+
+    <string name="auth_confirm_text">Do you allow Mitek to authenticate you to %s. You will provide:</string>
+    <string name="auth_confirm_allow">Authenticate</string>
+    <string name="auth_confirm_deny">Cancel</string>
+
+    <string name="auth_err_phone">No verified phone found. Please verify your phone in My Account menu.</string>
+    <string name="auth_err_nodata">No personal data stored. Please complete Mitek request before use it for authentication.</string>
+    <string name="auth_err_general">Something went wrong. Please try again later.</string>
+    <string name="nfc_disabled_alert">NFC disabled. Please enable NFC in device settings to get better outcome.</string>
+    <string name="confirm_reuse_text"><b>%s</b> is requesting that you share your identity details, please select from the list below what you would like to share:</string>
+
+    <string name="main_menu_button_account">Show Identity</string>
+
+    <string name="phone_menu">Your phone</string>
+    <string name="phone_menu_add">Add phone</string>
+
+    <string name="phone_add_text">We will send a mobile verification code to this number:</string>
+    <string name="phone_add_code">Send code</string>
+    <string name="phone_replace_text">Your previous number will be replaced</string>
+    <string name="phone_verify_error">Something went wrong. Please try again later</string>
+    <string name="phone_enter_code">Enter code</string>
+    <string name="phone_resend_code">Resend code</string>
+    <string name="phone_change">Change phone</string>
+    <string name="phone_code_text">We\'ve sent a code to %s. It may take a few moments to arrive.</string>
+    <string name="phone_verified_text">Your verified phone number:</string>
+    <string name="phone">Phone</string>
+
+    <string name="email_notification">Add your e-mail</string>
+    <string name="phone_notification">Add your phone number</string>
+
+    <!--    /// FROM HERE CONTINUE-->
+    <string name="email_menu">Your email</string>
+    <string name="email_verified_text">Your verified email:</string>
+    <string name="email_change">Change email</string>
+    <string name="email_menu_add">Add email</string>
+    <string name="email_add_text">We will send verification code to this email:</string>
+    <string name="email_replace_text">Your previous email will be replaced</string>
+
+    <string name="about_contact">Contact us</string>
+
+    <string name="account_document_name">Name</string>
+    <string name="account_document_address">Address</string>
+
+    <string name="account_social_stored">Stored at</string>
+
+    <string name="account_social_email">Email</string>
+    <string name="account_social_name">Name</string>
+
+
+    <string name="update_id_title">Update personal data</string>
+    <string name="no_notifications">No notifications</string>
+
+    <string name="documents_browse_image">Or use image from gallery</string>
+    <string name="documents_browse_pdf">Upload PDF file</string>
+
+    <string name="documents_error_button_continue">Continue</string>
+
+    <string name="selfie_done_continue">Continue</string>
+
+    <string name="menu_open_banking">Bank Connect</string>
+    <string name="open_banking_title">Bank Connect</string>
+    <string name="open_banking_main_text">By connecting to your online bank account, you consent to processing of the data by Mitek.</string>
+    <string name="open_banking_you_will">On clicking on continue, you will:</string>
+    <string name="open_banking_you_will1">You will get redirected to select your bank country and the bank you wish to connect to.</string>
+    <string name="open_banking_you_will2">You will be asked to login to your bank account.</string>
+    <string name="open_banking_you_will3">On successful login, you will be redirected back to the verification process.</string>
+    <string name="open_banking_continue">Continue</string>
+    <string name="account_open_banking_title">Your bank account</string>
+    <string name="account_open_banking_delete">Delete account data</string>
+    <string name="account_open_banking_delete_alert">You are going to delete the bank account data stored in your device. Are you sure?</string>
+    <string name="account_open_banking_emails">Emails</string>
+    <string name="account_open_banking_phones">Phones</string>
+    <string name="account_open_banking_accounts">Accounts</string>
+    <string name="account_open_banking_cards">Payment cards</string>
+
+    <string name="documents_nfc_mandatory_error">Scanning NFC chip is set as mandatory in request for this document, but your device has no NFC support. You cannot add this document with current device.</string>
+    <string name="documents_nfc_mandatory_text">Scanning chip is set as mandatory in request for this document</string>
+
+    <string name="onboarding_main">Your Digital Identity</string>
+    <string name="onboarding_subtext">The easy and safe way to share your identity under Your Digital Identity Wallet</string>
+    <string name="onboarding_terms_decline">Decline</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="onboarding_start">Start</string>
+    <string name="onboarding_terms_accept">Accept</string>
+    <string name="onboarding_done">Your app is activated</string>
+    <string name="onboarding_done_text">Thank you for setting up your Mitek app! You are now ready to start building you Digital Identity</string>
+    <string name="onboarding_name">Let\'s get started</string>
+    <string name="onboarding_name_text">Please enter your <b>name</b> below</string>
+    <string name="onboarding_phone">Finally, give us your number</string>
+    <string name="onboarding_phone_text"><![CDATA[We need your <b><font color=\"#1CADEC\">mobile number</font></b> to send you a verification code]]></string>
+    <string name="onboarding_email">Great, now enter your email</string>
+    <string name="onboarding_email_text"><![CDATA[Please enter your <b><font color=\"#1CADEC\">email</font></b> below. We will send you a verification code]]></string>
+    <string name="onboarding_verify_text"><![CDATA[Please enter the <b><font color=\"#1CADEC\">5 digit code</font></b> we have sent to <b><font color=\"#1CADEC\">%s</font></b>]]></string>
+    <string name="onboarding_code_wrong">Code not valid</string>
+    <string name="onboarding_pin">Create your own PIN</string>
+    <string name="onboarding_pin_add"><![CDATA[Please create a memorable <b><font color=\"#1CADEC\">5-digit PIN.</font></b> You will need this PIN to log into the app.]]></string>
+    <string name="onboarding_pin_confirm"><![CDATA[Please <b><font color=\"#1CADEC\">re-type</font></b> your 5 digit PIN]]></string>
+    <string name="onboarding_pin_no_match"><![CDATA[PIN doesn\'t match. Please create a new <b><font color=\"#1CADEC\">5-digit PIN</font></b>]]></string>
+    <string name="onboarding_skip">I\'ll do it later</string>
+    <string name="onboarding_code">Enter verification code</string>
+
+    <string name="qr_title">Scan Mitek QR code</string>
+
+    <!-- Current from DB -->
+    <string name="about_about_us">About us</string>
+    <string name="about_privacy">Privacy policy</string>
+    <string name="about_terms">Terms &amp; Conditions</string>
+    <string name="about_title">About Mitek</string>
+    <string name="about_version">Version:</string>
+    <string name="accepted_info_add_id">Add photo ID</string>
+    <string name="accepted_info_add_poa">Add a proof of address</string>
+    <string name="accepted_info_address_text"><![CDATA[<b>Proof of Address</b> any Bank, Utility, Phone, Insurance or Tax document that was issued within the last %s months and displays the date of issue, your name and current address.]]></string>
+    <string name="accepted_info_bank_text"><![CDATA[<b>Bank Statements</b> that were issued within the last %s months and displays the date of issue, some transaction history (front page only), your name and current address.]]></string>
+    <string name="accepted_info_bill_text"><![CDATA[<b>Utility Bills</b> from any gas, water broadband/internet, electricity or land line telephone provider (no mobile phone bills) that have been issued within the last %s months and displays the date of issue, your name and current address.]]></string>
+    <string name="accepted_info_driving_text"><b>Driver\'s licences</b> that display your photo, name, date of birth, issued and/or expiry dates. This includes provisional Driver\'s licenses.</string>
+    <string name="accepted_info_id_text"><b>National Identity cards</b> Internationally formatted documents only, we do not accept domestic ID cards.</string>
+    <string name="accepted_info_insurance_text"><![CDATA[<b>Insurance Documents</b> or certificates for home, contents or vehicle that was issued within the %s months and displays the date of issue, your name and current address.]]></string>
+    <string name="accepted_info_passcard_text"><b>PASS Cards</b> that display the PASS hologram such as the Citizencard, The Young Scot Card or the Validate UK proof of age card.</string>
+    <string name="accepted_info_passport_text"><b>International passports</b> excluding emergency, temporary and diplomatic passports as well as travel documents.</string>
+    <string name="accepted_info_residence_text"><b>National Residence Permits</b> - internationally formatted documents only, we do not accept domestic Residence Permits.</string>
+    <string name="accepted_info_tax_text"><![CDATA[<b>Tax Documents</b> including council tax statements and letters from HMRC or other national revenue department that was issued within the last %s months and displays the date of issue, your name and current address.]]></string>
+    <string name="accepted_info_title">Documents we accept</string>
+    <string name="accepted_info_visa_text"><b>Travel Visas</b> attached to your international passport.</string>
+    <string name="account_document_country">Country</string>
+    <string name="account_document_delete">Delete document data</string>
+    <string name="account_document_delete_popup_text">You are going to delete document data stored in your device. Are you sure?</string>
+    <string name="account_document_detail_title">Your %s</string>
+    <string name="account_document_dob">Date of birth</string>
+    <string name="account_document_expiry">Expiry date</string>
+    <string name="account_document_paycard_number">Card number</string>
+    <string name="account_id_docs_title">Your photo ID</string>
+    <string name="account_id_documents_no_data">There are no ID documents stored</string>
+    <string name="account_menu_delete_all">Delete all stored data</string>
+    <string name="account_menu_delete_popup_dismiss">Cancel</string>
+    <string name="account_menu_delete_popup_ok">Delete</string>
+    <string name="account_menu_delete_popup_text">You are going to delete all data stored in your device. Are you sure?</string>
+    <string name="account_menu_digital_id">Your digital ID</string>
+    <string name="account_menu_payment_card">Your payment card</string>
+    <string name="account_menu_photo_id">Your photo ID</string>
+    <string name="account_menu_poa">Your Proof of Address</string>
+    <string name="account_menu_selfie">Your selfie</string>
+    <string name="account_menu_signature">Your signature</string>
+    <string name="account_menu_title">Your account</string>
+    <string name="account_poa_docs_title">Your Proof of Address</string>
+    <string name="account_poa_documents_no_data">There are no Proof of Address documents stored</string>
+    <string name="account_selfie_delete">Delete face image</string>
+    <string name="account_selfie_delete_popup_text">You are going to delete the selfie image stored in your device. Are you sure?</string>
+    <string name="account_selfie_no_data">There is no selfie image stored</string>
+    <string name="account_selfie_text">That\'s your selfie image done</string>
+    <string name="account_selfie_title">Your selfie</string>
+    <string name="account_signature_delete">Delete signature image</string>
+    <string name="account_signature_delete_popup_text">You are going to delete the signature image stored in your device. Are you sure?</string>
+    <string name="account_signature_no_data">There is no signature image stored</string>
+    <string name="account_signature_text">That\'s your signature image done</string>
+    <string name="account_signature_title">Your signature</string>
+    <string name="account_social_delete">Delete stored social data</string>
+    <string name="account_social_delete_popup_text">You are going to delete %s data stored in your device. Are you sure?</string>
+    <string name="account_social_detail_title">Your %s</string>
+    <string name="account_social_no_data">There is no digital account data stored</string>
+    <string name="account_social_title">Your digital identity</string>
+    <string name="attachments_browse_file">Select a file</string>
+    <string name="attachments_remove">Remove %s</string>
+    <string name="attachments_text">Upload readable document file or image no larger than <b>30MB</b> on a <b>pdf, jpg, jpeg, png, tiff or gif</b> format only.</string>
+    <string name="attachments_title">Add your additional documents</string>
+    <string name="back">back</string>
+    <string name="bandwidth_test_button">Run speed test</string>
+    <string name="button_attachment_status_accepted">%s accepted</string>
+    <string name="button_back">Back</string>
+    <string name="button_document_status_accepted">%s accepted</string>
+    <string name="button_document_status_back_missing">%s back is missing</string>
+    <string name="button_document_status_processing">%s processing…</string>
+    <string name="button_document_status_rejected">%s rejected</string>
+    <string name="button_document_status_review">%s is under review.</string>
+    <string name="button_mandatory_text">Mandatory</string>
+    <string name="button_social_status_accepted">%s accepted</string>
+    <string name="button_social_status_fail">%s is under review.</string>
+    <string name="button_social_status_weak">%s insufficient data</string>
+    <string name="cancel_document_capture">Cancel</string>
+    <string name="confirm_reuse_continue">Continue</string>
+    <string name="confirm_reuse_liveness">Selfie</string>
+    <string name="confirm_reuse_selfie">Selfie</string>
+    <string name="confirm_reuse_title">Provide stored ID</string>
+    <string name="doc_address_display">Proof of Address</string>
+    <string name="doc_bank_display">Bank Statement</string>
+    <string name="doc_bank_id_display">Bank ID</string>
+    <string name="doc_bill_display">Utility Bill</string>
+    <string name="doc_driving_display">Driving Licence</string>
+    <string name="doc_id_display">Identity Card</string>
+    <string name="doc_insurance_display">Insurance</string>
+    <string name="doc_passcard_display">PASS Card</string>
+    <string name="doc_passport_display">Passport</string>
+    <string name="doc_payment_card_display">Payment Card</string>
+    <string name="doc_residence_display">Residence Permit</string>
+    <string name="doc_signature_display">Signature</string>
+    <string name="doc_tax_display">Tax Document</string>
+    <string name="doc_visa_display">Travel Visa</string>
+    <string name="document_scan_edit_back">Back</string>
+    <string name="document_scan_edit_next">Next</string>
+    <string name="document_scan_edit_title">Edit Scan</string>
+    <string name="document_scan_review_done">Done</string>
+    <string name="document_scan_review_title">Review</string>
+    <string name="documents_detail_add_your_document">Let\'s get a clear photo of your %s</string>
+    <string name="documents_detail_add_your_document_2_sides">Let\'s get a clear photo of the <b>%s</b> of  your %s</string>
+    <string name="documents_detail_button_action">Take picture</string>
+    <string name="documents_detail_tip1">Don\'t upload a photocopy or screenshot</string>
+    <string name="documents_detail_tip2">Keep it flat with space around the edges</string>
+    <string name="documents_detail_tip3">Make sure it\'s in focus and without any glare or flash</string>
+    <string name="documents_detail_tip_pro">Pro TIP: Center a document on a dark background</string>
+    <string name="documents_detail_title">Add your %s</string>
+    <string name="documents_error_1">Check there is no glare or white spots</string>
+    <string name="documents_error_2">Avoid any shadows</string>
+    <string name="documents_error_3">Place the document on a flat surface</string>
+    <string name="documents_error_4">Capture all four corners of the document</string>
+    <string name="documents_error_title">Retake %s</string>
+    <string name="documents_nfc_continue">Continue</string>
+    <string name="documents_nfc_continue_no_nfc">My %s doesn\'t have a chip</string>
+    <string name="documents_nfc_button_continue_ocr">Continue with current %s image</string>
+    <string name="documents_nfc_details_dob">Date of birth (y/m/d):</string>
+    <string name="documents_nfc_details_document_number">Document number:</string>
+    <string name="documents_nfc_details_document_personal_number">Personal number:</string>
+    <string name="documents_nfc_details_expiration">Expiration date (y/m/d):</string>
+    <string name="documents_nfc_details_gender">Gender:</string>
+    <string name="documents_nfc_details_issuer">Issuer:</string>
+    <string name="documents_nfc_details_mrz">Machine readable zone:</string>
+    <string name="documents_nfc_details_name">Name:</string>
+    <string name="documents_nfc_details_nationality">Nationality:</string>
+    <string name="documents_nfc_done_title">Your %s data</string>
+    <string name="documents_nfc_error_ocr">We were not able to collect a clean image of your %s. Please try again.</string>
+    <string name="documents_nfc_error_title">Rescan %s NFC</string>
+    <string name="documents_nfc_inprogress">Reading data.....</string>
+    <string name="documents_nfc_instructions">Hold your phone near an NFC enabled %s</string>
+    <string name="documents_nfc_rescan">Take picture</string>
+    <string name="documents_nfc_title">Scan %s NFC</string>
+    <string name="documents_nfc_try_again">Try again</string>
+    <string name="front">front</string>
+    <string name="gdpr_button_accept">Agree and Continue</string>
+    <string name="gdpr_button_exit">Don\'t agree and exit</string>
+    <string name="gdpr_title">Your Privacy &amp; Mitek</string>
+    <string name="history_details_no_data">No data provided yet</string>
+    <string name="history_details_share_label">On %s you share:</string>
+    <string name="history_details_share_view">View shared</string>
+    <string name="history_details_text">On %s you provide to %s:</string>
+    <string name="history_text">All of your past transactions listed below:</string>
+    <string name="history_title">Your history</string>
+    <string name="id_button_status_back_missing">Back is missing</string>
+    <string name="id_button_status_error">Something went wrong</string>
+    <string name="id_button_status_processing">processing...</string>
+    <string name="id_button_status_review">Under review.</string>
+    <string name="id_info_accepted_documents">Want to learn more about the documents we accept?</string>
+    <string name="id_info_mandatory">Add mandatory photo ID</string>
+    <string name="id_info_non_mandatory_end">from below</string>
+    <string name="id_info_non_mandatory_optional">You can choose to add non mandatory photo ID</string>
+    <string name="id_info_non_mandatory_start">Add at least</string>
+    <string name="id_info_title">Add a Photo ID</string>
+    <string name="info_mandatory_attachments">Add mandatory document</string>
+    <string name="info_non_mandatory_attachments">Add following documents from below</string>
+    <string name="intro_video_skip">Skip Intro</string>
+    <string name="liveness_cancel">Cancel</string>
+    <string name="liveness_match">Match your nose to the yellow dot</string>
+    <string name="liveness_move_closer">Move closer keeping your nose on the dot</string>
+    <string name="liveness_move_farther">Move away keeping your nose on the dot</string>
+    <string name="liveness_nod">Nod when ready</string>
+    <string name="liveness_stay">Stay still</string>
+    <string name="liveness_thank_you">Thank you!</string>
+    <string name="loading_screen_loading">Loading...</string>
+    <string name="login_code_set">PIN set. Use your PIN to log in</string>
+    <string name="login_confirm_code">Please confirm PIN</string>
+    <string name="login_enter_code">Please enter your PIN to sign in</string>
+    <string name="login_fingerprint_failed">Sorry, we couldn\'t login. Use your PIN or try again</string>
+    <string name="login_fingerprint_login_cancel">Enter PIN</string>
+    <string name="login_fingerprint_login_subtitle">Log in using your biometric credential</string>
+    <string name="login_fingerprint_login_title">Biometric login</string>
+    <string name="login_set_code">Please set your 5 digits PIN for log in</string>
+    <string name="login_set_code_no_match">PIN not match. Please try again</string>
+    <string name="login_title">Hi %s</string>
+    <string name="login_wrong_code">Wrong PIN. Please try again</string>
+    <string name="main_menu_button_about">About Mitek</string>
+    <string name="main_menu_button_continue">Continue request</string>
+    <string name="main_menu_button_history">History</string>
+    <string name="main_menu_button_settings">Settings</string>
+    <string name="main_menu_title">Your Mitek options</string>
+    <string name="manual_document_capture">Press the capture button to take the photo</string>
+    <string name="manual_selfie_detail_button_action">Start</string>
+    <string name="manual_selfie_detail_text">For a great selfie...</string>
+    <string name="manual_selfie_detail_title">Add a selfie</string>
+    <string name="manual_selfie_done_text">Great that\'s your selfie done</string>
+    <string name="manual_selfie_done_title">Your selfie</string>
+    <string name="manual_selfie_error_button_action">Take selfie</string>
+    <string name="manual_selfie_error_title">Retake your selfie</string>
+    <string name="poa_info_accepted_documents">What type of documents do we accept?</string>
+    <string name="poa_info_confirm_following">Please check the following:</string>
+    <string name="poa_info_continue">Continue</string>
+    <string name="poa_info_document_address_to">Is this document addressed to <b>%s</b></string>
+    <string name="poa_info_doi_after">The document was issued on or after <b>%s</b></string>
+    <string name="poa_info_doi_visible">Is a date of issue clearly visible?</string>
+    <string name="poa_info_older_than">Is this document no older than <b>%s</b></string>
+    <string name="poa_info_select">Please select document type:</string>
+    <string name="poa_info_select_text">Select a document:</string>
+    <string name="poa_info_text">Please provide at least one proof of address document</string>
+    <string name="poa_info_title">Add a Proof of Address</string>
+    <string name="poa_info_transaction_visible">Is there a transaction visible?</string>
+    <string name="qr_scan_error">Not a valid identity request or the request already opened on a different device</string>
+    <string name="request_info_button_attachments">Attachments</string>
+    <string name="request_info_button_digital">Online Profile</string>
+    <string name="request_info_button_id">Photo ID</string>
+    <string name="request_info_button_payment_card">Payment Card</string>
+    <string name="request_info_button_poa">Proof of Address</string>
+    <string name="request_info_button_selfie">Selfie</string>
+    <string name="request_info_button_selfie_manual">Selfie</string>
+    <string name="request_info_button_signature">Signature</string>
+    <string name="request_info_button_video">Video ID</string>
+    <string name="request_info_cancelled">Request cancelled</string>
+    <string name="request_info_completed">Thank you! <br/><b>%s</b> received your details</string>
+    <string name="request_info_progress">Your Progress</string>
+    <string name="request_info_social_accepted">Was successful</string>
+    <string name="request_info_text">We need you to provide the following to complete your identity verification.</string>
+    <string name="request_info_tip_title">Feeling a bit stuck?</string>
+    <string name="request_info_title">Confirm your identity</string>
+    <string name="selfie_detail_button_action">Start</string>
+    <string name="selfie_detail_text">For a great selfie...</string>
+    <string name="selfie_detail_tip1">Take off your glasses, scarves, hats and anything covering your face</string>
+    <string name="selfie_detail_tip2">Look straight into the camera</string>
+    <string name="selfie_detail_tip3">Take a close up with your full head in focus</string>
+    <string name="selfie_detail_title">Take a selfie</string>
+    <string name="selfie_done_another">I\'ll take another</string>
+    <string name="selfie_done_text">Great that\'s your selfie done</string>
+    <string name="selfie_done_title">Your face check</string>
+    <string name="selfie_error_button_action">Start</string>
+    <string name="selfie_error_text">Cannot detect face</string>
+    <string name="selfie_error_text1">Look directly at the camera</string>
+    <string name="selfie_error_text2">Take off anything covering your face</string>
+    <string name="selfie_error_text3">Check the photo is clear and in focus</string>
+    <string name="selfie_error_text4">Check the photo is a close up of your full head</string>
+    <string name="selfie_error_title">Selfie</string>
+    <string name="settings_account">ACCOUNT SETTINGS</string>
+    <string name="settings_ask_to_reuse">Consent to share requested identity data</string>
+    <string name="settings_ask_to_reuse_description">Enabling this feature will mean that your permission is always required to share the specific identity details which are being requested. This allows you to share only the information which you are comfortable with.</string>
+    <string name="settings_bioid">Touch ID</string>
+    <string name="settings_bioid_description">This only allows biometric signing into the app, rather than use of your passcode. Passcode will then only be required if biometric login fails.</string>
+    <string name="settings_change_pass">Change passcode</string>
+    <string name="settings_passcode_cancel">Cancel</string>
+    <string name="settings_passcode_change">Change</string>
+    <string name="settings_passcode_close">Close</string>
+    <string name="settings_passcode_confirm">Confirm passcode:</string>
+    <string name="settings_passcode_current">Current passcode:</string>
+    <string name="settings_passcode_description">Here you can change your 5 digit login code</string>
+    <string name="settings_passcode_error">Cannot change passcode. Please try again.</string>
+    <string name="settings_passcode_error_confirm_digits">Confirm passcode should be 5 digits.</string>
+    <string name="settings_passcode_error_confirm_empty">Confirm passcode should not be empty.</string>
+    <string name="settings_passcode_error_current_ampty">Current passcode should not be empty.</string>
+    <string name="settings_passcode_error_current_digits">Current passcode should be 5 digits.</string>
+    <string name="settings_passcode_error_new_digits">New passcode should be 5 digits.</string>
+    <string name="settings_passcode_error_new_empty">New passcode should not be empty.</string>
+    <string name="settings_passcode_error_nomatch">New and confirm passcode do not match.</string>
+    <string name="settings_passcode_new">New passcode:</string>
+    <string name="settings_passcode_reveal">Reveal passcode</string>
+    <string name="settings_passcode_reveal_description">Use bioid to reveal passcode</string>
+    <string name="settings_passcode_success">Passcode chanaged successfully.</string>
+    <string name="settings_passcode_title">Change passcode</string>
+    <string name="settings_reusable">Reusable identity</string>
+    <string name="settings_reusable_description">Save your identity for future use. This will allow your identity documents (which we have previously verified) and the personal data extracted from them to be re-used for future sharing when your identity is requested. In the meantime, everything will be stored safely and securely on your device.</string>
+    <string name="settings_security">SECURITY SETTINGS</string>
+    <string name="settings_title">Settings</string>
+    <string name="share_button">Share</string>
+    <string name="share_code">Please share this code with the recipient: <b>%s</b></string>
+    <string name="share_details_addres">Address</string>
+    <string name="share_details_dob">Date of birth</string>
+    <string name="share_details_name">Name</string>
+    <string name="share_details_poa">Proof of address</string>
+    <string name="share_details_selfie">Selfie</string>
+    <string name="share_error">Something went wrong while generating your share URL. Please try again later.</string>
+    <string name="share_history_title">SHARE</string>
+    <string name="share_menu_additional">Additional data</string>
+    <string name="share_menu_documents">Documents data</string>
+    <string name="share_menu_generate">Share</string>
+    <string name="share_menu_personal">Personal data</string>
+    <string name="share_menu_title">Share my data</string>
+    <string name="share_qr">Scan QR with a camera</string>
+    <string name="share_text">%s \n\n verification code: %s</string>
+    <string name="share_url">or share URL</string>
+    <string name="social_detail_button_action">Add an online account</string>
+    <string name="social_detail_text">Online accounts are used to prevent the impersonation of your identity. We use the profile data and other permissions to confirm you are who you say you are. We do not use the data for any other purpose.</string>
+    <string name="social_detail_tip1"><b>We do not see your password</b></string>
+    <string name="social_detail_tip2"><b>We never post to your timeline</b></string>
+    <string name="social_detail_tip3"><b>We do not save your data</b></string>
+    <string name="social_detail_tip4"><b>We do not share your data</b></string>
+    <string name="social_detail_title">Add a Digital Identity</string>
+    <string name="social_detail_usage">How we use your profile:</string>
+    <string name="social_info_accepted">Accepted</string>
+    <string name="social_info_mandatory_end">from below</string>
+    <string name="social_info_mandatory_start">Add at least</string>
+    <string name="social_info_non_mandatory">You can choose to add non mandatory digital ID</string>
+    <string name="social_info_title">Add a Digital Identity</string>
+    <string name="social_info_usage_question">Why do we need your online accounts?</string>
+    <string name="social_name_mismatch_message">We found the name <b>%s</b> on your <b>%s</b> profile. It is different from the name given by <b>%s</b> who entered <b>%s</b>.</string>
+    <string name="social_name_mismatch_no">Not mine. Sign me out.</string>
+    <string name="social_name_mismatch_text">Is this you?</string>
+    <string name="social_name_mismatch_yes">This is my account</string>
+    <string name="update_id_button">Update</string>
+    <string name="update_id_error">Something went wrong while creating your request. Please try again later.</string>
+    <string name="update_id_text">Here you can update existing or add missing personal data. Choose what you want to update or add:</string>
+    <string name="verification_code_error">Wrong code, Please check the 4 digits verification code from the browser and try again</string>
+    <string name="video_detail_country">Select Issuing Country</string>
+    <string name="video_detail_docnumber">Document number</string>
+    <string name="video_detail_doctype">Document type</string>
+    <string name="video_detail_email">Email address</string>
+    <string name="video_detail_language">Select video call language</string>
+    <string name="video_detail_language_de">Deutsch</string>
+    <string name="video_detail_language_en">English</string>
+    <string name="video_detail_phone">Mobile phone number</string>
+    <string name="video_detail_start">Start</string>
+    <string name="video_detail_text">Our certified agent will verify your ID document over a video call. Before you continue, we need a few more details:</string>
+    <string name="video_detail_why">Not sure what these questions are and why it is required?</string>
+    <string name="video_done_text">Thank you. Your video verification is now completed.</string>
+    <string name="video_done_title">Video verification completed</string>
+    <string name="video_general_error">Something went wrong. Please try again later.</string>
+    <string name="video_intro_broadband">Before you start, please make sure you have stable broadband.</string>
+    <string name="video_intro_continue">Continue</string>
+    <string name="video_intro_description">Video ID is a video call between you and our certified agent.</string>
+    <string name="video_intro_instruction">During this video call, the agent will:</string>
+    <string name="video_intro_instruction1">Take a picture of you and your ID document</string>
+    <string name="video_intro_instruction2">Check that your ID document is valid and not expired</string>
+    <string name="video_intro_instruction3">Send an SMS to your mobile phone with a verification code</string>
+    <string name="video_intro_instruction4">Request access to your device camera and microphone</string>
+    <string name="video_no_permission">Audio/video permissions are required for video verification</string>
+    <string name="video_why_info">More information on the details we need from you and why is it required for your video verification</string>
+    <string name="video_why_info1">Document type: Please select a document that you have on hand and ready to show to the agent. Make sure that the document is valid and not expired.</string>
+    <string name="video_why_info2">Document Country: Select the document issuing country that you are using for the video verification.</string>
+    <string name="video_why_info3">Video call language: Select your preferred language for the video call with the certified agent.</string>
+    <string name="video_why_info4">Mobile phone number: During the video verification, the agent will send an SMS to your mobile phone  with a unique code which is part of the verification process.</string>
+    <string name="video_why_info5">Bandwidth test: Since video verification is done via a video call, you must have stable  internet connection to continue. Run the internet speed test to find out if your internet speed meets the minimum requirement.</string>
+
+</resources>

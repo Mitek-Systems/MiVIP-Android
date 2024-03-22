@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HooYu colors -->
+    <!-- Main UI colors -->
+
+    <!-- BETFRED -->
+    <color name="hy_header_color_start">#002548</color>
+    <color name="hy_header_color_end">#002548</color>
+    <color name="hy_main_color">#002548</color>
+    <color name="hy_secondary_color">#e31836</color>
+    <color name="hy_secondary_disabled">#301EA6E5</color>
+    <color name="hy_button_gradient_start">#e31836</color>
+    <color name="hy_button_gradient_end">#82368c</color>
+    <color name="hy_alert_red">#FF203F</color>
+    <color name="hy_yellow">#D38100</color>
+    <color name="hy_green">#429448</color>
+    <color name="hy_white">#ffffff</color>
+
+    <!-- liveness -->
+    <color name="liveness_instructions_background">@color/hy_secondary_color</color>
+    <color name="liveness_instructions_background_done">@color/hy_green</color>
+    <color name="liveness_instructions_text">@color/hy_white</color>
+
+    <!-- qr code scanner line override -->
+    <color name="scaner_border_line">@color/hy_secondary_color</color>
+    <color name="scanner_line">@color/hy_main_color</color>
+
+</resources>
