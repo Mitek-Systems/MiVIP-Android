@@ -102,6 +102,11 @@ private val mivipActivityResult = registerForActivityResult(ActivityResultContra
 
 - - -
 
+# Integration Guide
+* [MiVIPSdk](Docs/dev_guide_android.md)
+
+- - -
+
 # Third-Party Licenses
 
 ### [3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause)
