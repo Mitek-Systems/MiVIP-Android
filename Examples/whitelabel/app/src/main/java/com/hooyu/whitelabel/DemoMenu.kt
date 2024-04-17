@@ -56,7 +56,6 @@ class DemoMenu : Fragment(R.layout.fragment_menu) {
                 putExtra(MiVIPActivity.SOUNDS_DISABLED, true) // default is False
                 putExtra(MiVIPActivity.REUSABLE_ENABLED, false) // default is False
                 putExtra(MiVIPActivity.ENABLE_SCREENSHOTS, true) // default is false
-//                putExtra(MiVIPActivity.SELFIE_CALLBACK_URL, selfieCallbackUrl) // if want to receive server callback at liveness/selfie processing
 //                putExtra(MiVIPActivity.DOCUMENT_CALLBACK_URL, docCallbackUrl) // if want to receive server callback at document processing
             }
             mivipActivityResult.launch(intent)
@@ -69,7 +68,6 @@ class DemoMenu : Fragment(R.layout.fragment_menu) {
                 putExtra(MiVIPActivity.ACTION_FLAG, MiVIPActivity.ACTION_REQUEST) // open request
                 val mivipRequestId = "8ec4dd13-ad90-4176-ba77-f57770af291d"
                 putExtra(MiVIPActivity.MIVIP_REQUEST_ID, mivipRequestId) // ID request
-//                putExtra(MiVIPActivity.SELFIE_CALLBACK_URL, selfieCallbackUrl) // if want to receive server callback at liveness/selfie processing
 //                putExtra(MiVIPActivity.DOCUMENT_CALLBACK_URL, docCallbackUrl) // if want to receive server callback at document processing
                 putExtra(MiVIPActivity.SOUNDS_DISABLED, false) // this is the default value (sounds on)
                 putExtra(MiVIPActivity.REUSABLE_ENABLED, false) // this is the default value (wallet off)
