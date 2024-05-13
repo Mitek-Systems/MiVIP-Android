@@ -2,11 +2,11 @@
     <string name="app_name">Mitek demo</string>
 
 <!--    Mitek Endpoints configuration for DEV -->
-    <string name="mivip_url" translatable="false">MIVIP_RNDPOINT_URL</string>
+    <string name="mivip_url" translatable="false">_MITEK_INSTANCE_URL_HERE_</string>
 
 <!--    Тo use misnap capture functionality - you have to get a licence key for using it. -->
-    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>
-
+<!--    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>-->
+    <string name="misnap_license" translatable="false">_MISNAP_LICENSE_HERE_</string>
 
     <!--    MiVIP / MiSnap SDK texts -->
     <!--    MiSnap Strings-->

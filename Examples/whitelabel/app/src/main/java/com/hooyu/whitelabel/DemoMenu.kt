@@ -47,6 +47,7 @@ class DemoMenu : Fragment(R.layout.fragment_menu) {
 
         val miVipVersion = MiVIPActivity.VERSION
         Log.i("MIVIP ", "Version: $miVipVersion")
+        binding.sdkVersion.text = "Version: $miVipVersion"
 
         // Scan QR code
         binding.btnScanQr.setOnClickListener {
