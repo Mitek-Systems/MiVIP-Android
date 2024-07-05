@@ -24,6 +24,22 @@
 
     <Button
         android:visibility="visible"
+        android:id="@+id/btn_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Open request" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/btn_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Request code" />
+
+    <Button
+        android:visibility="visible"
         android:id="@+id/btn_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,14 +53,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="View account" />
-
-    <Button
-        android:visibility="visible"
-        android:id="@+id/btn_request"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="Open request" />
 
     <TextView
         android:id="@+id/sdk_version"

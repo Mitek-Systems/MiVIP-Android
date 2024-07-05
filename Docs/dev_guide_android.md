@@ -140,6 +140,46 @@ Add also following features in AndroidManifest.xml:
         }
 ```
 
+* Open MiVIP request using 4 digit request code
+
+``` kotlin
+        binding.btnCode.setOnClickListener {
+            val code = "1234" // Code is shown in MiVIP 'install app' web page
+            mivipService().verifyCode(code,
+                onSuccess = { idRequest: UUID? ->
+                    idRequest?.let {
+                        // same like open request:
+                        val intent = Intent(requireActivity(), MiVIPActivity::class.java).apply {
+                            putExtra(MiVIPActivity.SDK_FLAG, true) // mark we are in SDK mode
+                            putExtra(MiVIPActivity.ACTION_FLAG, MiVIPActivity.ACTION_REQUEST) // open request
+                            val mivipRequestId = idRequest
+                            putExtra(MiVIPActivity.MIVIP_REQUEST_ID, mivipRequestId) // ID request
+                            // putExtra(MiVIPActivity.DOCUMENT_CALLBACK_URL, docCallbackUrl) // if want to receive server callback at document processing
+                            putExtra(MiVIPActivity.SOUNDS_DISABLED, false) // this is the default value (sounds on)
+                            putExtra(MiVIPActivity.REUSABLE_ENABLED, false) // this is the default value (wallet off)
+                            putExtra(MiVIPActivity.ENABLE_SCREENSHOTS, true) // default is false
+
+                            // MiSnap passthrough configurations:
+                            putExtra(MiVIPActivity.MISNAP_helpFragmentFaceWorkflowSettings, helpFragmentFacetWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_reviewFragmentFaceWorkflowSettings, reviewFragmenFaceWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_faceAnaLysisFragmentWorkflowSettings, faceAnalysisFragmentWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_helpFragmentDocumentWorkflowSettings, helpFragmentDocumentWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_reviewFragmentDocumentWorkflowSettings, reviewFragmenDocumentWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_documentAnalysisFragmentWorkflowSettings, documentAnalysisFragmentWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_nfcReaderFragmentWorkflowSettings, nfcReaderFragmentWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_voicePhraseSelectionFragmentWorkflowSettings, voicePhraseSelectionFragmentWorkflowSettings)
+                            putExtra(MiVIPActivity.MISNAP_voiceProcessorFragmentWorkflowSettings, voiceProcessorFragmentWorkflowSettings)
+                        }
+                        mivipActivityResult.launch(intent)
+                    }
+                },
+                onFailure = { errCode: Int?, message: String?, errorBody: String?, e: Exception? ->
+                    // Something went wrong
+                }
+            )
+        }
+```
+
 * Show requests history
 
 ``` kotlin
@@ -172,22 +212,72 @@ Add also following features in AndroidManifest.xml:
 
 ``` kotlin
         private val mivipActivityResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-            MiVIPActivity.Result.result?.let { res ->
-                res.scoreResult?.let {
-                    Log.i("MIVIP", "Score result $it")
-                }
-                res.request?.let {
-                    Log.i("MIVIP", "Resuest $it")
-                }
+        MiVIPActivity.Result.result?.let { res ->
+            res.scoreResult?.let {
+                Log.i("MIVIP", "Score result: $it")
             }
-            MiVIPActivity.Result.clearResult()
+            res.request?.let {
+                Log.i("MIVIP", "Resuest: $it")
+            }
+            res.error?.let {
+                Log.i("MIVIP", "Error: $it")
+            }
+        }
+        MiVIPActivity.Result.clearResult()
+    }
+```
+
+* MiSnap customisation
+Additional MiSnap customisation is available as proxy from main app to MiSnap SDK. For more MiSnap customisation options refer to [MiSnap-Android](https://github.com/Mitek-Systems/MiSnap-Android)
+
+``` kotlin
+        val faceAnalysisFragmentWorkflowSettings =
+            FaceAnalysisFragment.buildWorkflowSettings(
+                showCountdownTimer = true,
+                guideViewShowVignette = true,
+                //guideViewDrawableId = android.R.drawable.ic_menu_view,
+                reviewCondition = FaceAnalysisFragment.ReviewCondition.NEVER
+            )
+        val helpFragmentFacetWorkflowSettings =
+            HelpFragment.buildWorkflowSettings(showSkipCheckBox = false)
+        val reviewFragmenFaceWorkflowSettings = ReviewFragment.buildWorkflowSettings()
+
+        val documentAnalysisFragmentWorkflowSettings =
+            DocumentAnalysisFragment.buildWorkflowSettings(
+                timeoutDuration = 15_000,
+                manualButtonDrawableId = android.R.drawable.ic_menu_camera,
+                guideViewShowVignette = true,
+                hintViewShouldShowBackground = true,
+                successViewShouldVibrate = true,
+                reviewCondition = DocumentAnalysisFragment.ReviewCondition.ALWAYS
+            )
+        val helpFragmentDocumentWorkflowSettings =
+            HelpFragment.buildWorkflowSettings(showSkipCheckBox = false)
+        val reviewFragmenDocumentWorkflowSettings = ReviewFragment.buildWorkflowSettings()
+
+        val nfcReaderFragmentWorkflowSettings = NfcReaderFragment.buildWorkflowSettings()
+        val voicePhraseSelectionFragmentWorkflowSettings = VoicePhraseSelectionFragment.buildWorkflowSettings()
+        val voiceProcessorFragmentWorkflowSettings = VoiceProcessorFragment.buildWorkflowSettings()
+
+        ...
+        val intent = Intent(requireActivity(), MiVIPActivity::class.java).apply {
+            ...
+            putExtra(MiVIPActivity.MISNAP_helpFragmentFaceWorkflowSettings, helpFragmentFacetWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_reviewFragmentFaceWorkflowSettings, reviewFragmenFaceWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_faceAnaLysisFragmentWorkflowSettings, faceAnalysisFragmentWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_helpFragmentDocumentWorkflowSettings, helpFragmentDocumentWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_reviewFragmentDocumentWorkflowSettings, reviewFragmenDocumentWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_documentAnalysisFragmentWorkflowSettings, documentAnalysisFragmentWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_nfcReaderFragmentWorkflowSettings, nfcReaderFragmentWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_voicePhraseSelectionFragmentWorkflowSettings, voicePhraseSelectionFragmentWorkflowSettings)
+            putExtra(MiVIPActivity.MISNAP_voiceProcessorFragmentWorkflowSettings, voiceProcessorFragmentWorkflowSettings)
         }
 ```
 
 ## SDK files
-* MiVIP-api-3.3.4-release.aar - includes API calls and handle results. Size - 4.2MB
-* MiVIP-core-3.3.4-release.aar - implementation of active liveness and core functionality. Size - 254KB
-* MiVIP-sdk-3.3.4-release.aa - includes journey orchestration and UI. Size - 8.4MB
+* MiVIP-api-3.5.1-release.aar - includes API calls and handle results. Size - 4.2MB
+* MiVIP-core-3.5.1-release.aar - implementation of active liveness and core functionality. Size - 254KB
+* MiVIP-sdk-3.5.1-release.aar - includes journey orchestration and UI. Size - 8.5MB
 
 ## System Requirements
 

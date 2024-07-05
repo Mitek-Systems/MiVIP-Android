@@ -10,7 +10,7 @@ android {
         applicationId "com.hooyu.android.us" // whitelabel
         minSdk 24
         targetSdk 34
-        versionCode 11
+        versionCode 17
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -122,4 +122,7 @@ dependencies {
     // ML
     api 'com.google.android.gms:play-services-mlkit-face-detection:17.1.0'
     api 'com.google.android.gms:play-services-mlkit-text-recognition:18.0.1'
+
+    // totp
+    implementation("dev.turingcomplete:kotlin-onetimepassword:2.2.0")
 }

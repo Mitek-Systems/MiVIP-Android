@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">Mitek demo</string>
 
-<!--    Mitek Endpoints configuration for DEV -->
-    <string name="mivip_url" translatable="false">_MITEK_INSTANCE_URL_HERE_</string>
+<!--    Mitek Endpoints configuration -->
+    <string name="mivip_url" translatable="false">MIVIP_INSTANCE_URL</string>
 
 <!--    Тo use misnap capture functionality - you have to get a licence key for using it. -->
-<!--    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>-->
-    <string name="misnap_license" translatable="false">_MISNAP_LICENSE_HERE_</string>
+    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>
 
     <!--    MiVIP / MiSnap SDK texts -->
     <!--    MiSnap Strings-->
@@ -159,6 +158,11 @@
     <!-- end MiSnap-->
 
     <!-- MiVIP -->
+    <string name="video_detail_language_it">Italiano</string>
+    <string name="video_detail_language_es">Español</string>
+    <string name="video_mandatory_field">This field is mandatory</string>
+    <string name="video_no_documents_err">There is no document type allowed for this issuing country and request. This field is required.</string>
+    <string name="request_manual">We\'re doing final checks.<br/>Completing our final manual checks can take a few minutes.</string>
     <string name="gdpr_text"><![CDATA[<p><b>%s has asked Mitek to verify your ID.</b></p><p>To do this, Mitek will ask you to provide personal data including location, facial and document images. We will not share your personal data with any third party except <b>%s</b>.</p><br/><p>By clicking Agree and Continue you give your consent to the processing and sharing of your personal data including facial images. Please see our <a href="%s">terms</a> and <a href="%s">privacy policy</a>.</p>]]></string>
     <string name="poa_already_sumbitted">You already submitted:</string>
     <string name="poa_info_document_address_to_noname">Does this document have the applicant name and address</string>
