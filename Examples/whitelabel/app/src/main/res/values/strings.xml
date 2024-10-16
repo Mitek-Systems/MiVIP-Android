@@ -2,10 +2,11 @@
     <string name="app_name">Mitek demo</string>
 
 <!--    Mitek Endpoints configuration -->
-    <string name="mivip_url" translatable="false">MIVIP_INSTANCE_URL</string>
+    <string name="mivip_url" translatable="false">MIVIP_URL</string>
 
 <!--    Тo use misnap capture functionality - you have to get a licence key for using it. -->
-    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>
+<!--    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>-->
+    <string name="misnap_license" translatable="false">MISNAP_LICENSE</string>
 
     <!--    MiVIP / MiSnap SDK texts -->
     <!--    MiSnap Strings-->
@@ -30,7 +31,6 @@
     <string name="misnap_default_text_ux2"></string>
     <string name="misnap_bug_message_ux2">Captured!</string>
     <string name="misnap_auto_capture_not_supported_ux2">This device does not support auto-capture mode. Press the snap photo button when you are ready to snap a picture.</string>
-
     <!-- For MiSnap hint messages -->
     <string name="misnap_more_light_ux2">Move to a well-lit area</string>
     <string name="misnap_less_light_ux2">Too bright</string>
@@ -46,7 +46,6 @@
     <string name="misnap_wrong_doc_check_front_expected_ux2">Use front of check</string>
     <string name="misnap_bad_orientation_ux2">Turn Document 90 Degrees</string>
     <string name="misnap_tap_now_ux2">Tap now</string>
-
     <string name="misnap_overlay_flash_on_ux2">Flash is on</string>
     <string name="misnap_overlay_flash_off_ux2">Flash is off</string>
     <string name="misnap_overlay_help_ux2">Help</string>
@@ -54,10 +53,8 @@
     <string name="misnap_overlay_capture_ux2">Snap Photo</string>
     <string name="misnap_manual_capture_please_wait_ux2">Hold still, please wait…</string>
     <string name="misnap_video_ft_message_ux2"><![CDATA[Hold still. <b><i>We\'ll take the photo for you</i></b>]]></string>
-
     <!-- For optional workflow changes -->
     <string name="misnap_seamless_failover_ux2">Switched to manual capture mode. Press the Snap Photo button when ready.</string>
-
     <!--Workflow display strings-->
     <string name="misnap_video_help_message_1_check_ux2">Center check on dark surface</string>
     <string name="misnap_video_help_message_1_license_ux2">Center document on dark surface</string>
@@ -68,7 +65,6 @@
     <string name="misnap_video_help_message_3_license_ux2">Align document and we\'ll take the photo for you</string>
     <string name="misnap_video_help_message_3_passport_ux2">Align passport and we\'ll take the photo for you</string>
     <string name="misnap_video_help_message_3_document_ux2">Align document and we\'ll take the photo for you</string>
-
     <string name="misnap_video_tutorial_message_1_check_ux2">Center check on dark surface</string>
     <string name="misnap_video_tutorial_message_1_license_ux2">Center document on dark surface</string>
     <string name="misnap_video_tutorial_message_1_passport_ux2">Center passport on dark surface</string>
@@ -78,7 +74,6 @@
     <string name="misnap_video_tutorial_message_3_license_ux2">Align document and we\'ll take the photo for you</string>
     <string name="misnap_video_tutorial_message_3_passport_ux2">Align passport and we\'ll take the photo for you</string>
     <string name="misnap_video_tutorial_message_3_document_ux2">Align document and we\'ll take the photo for you</string>
-
     <!--manual help screen strings-->
     <string name="misnap_manual_help_message_1_document_ux2">Center document on dark surface</string>
     <string name="misnap_manual_help_message_1_check_ux2">Center check on dark surface</string>
@@ -99,10 +94,8 @@
     <string name="misnap_manual_tutorial_message_3_check_ux2">Align check, hold steady &amp; tap capture button when ready</string>
     <string name="misnap_manual_tutorial_message_3_license_ux2">Align document, hold steady &amp; tap capture button when ready</string>
     <string name="misnap_manual_tutorial_message_3_passport_ux2">Align passport, hold steady &amp; tap capture button when ready</string>
-
     <!-- For wrong document toast -->
     <string name="misnap_wrong_document_check_front_found_ux2">Please flip the check over. Check back was expected, but check front was found.</string>
-
     <!-- Friendly names for failure reason codes, mappedMiSnapAnalyzerResultvent -->
     <string name="misnap_failure_reason_unknown_ux2">Center the document with all 4 corners visible</string>
     <string name="misnap_failure_reason_four_corner_confidence_ux2">Center the document with all 4 corners visible</string>
@@ -119,7 +112,6 @@
     <string name="misnap_failure_reason_wrong_doc_check_front_ux2">Use the front of the check with all numbers visible</string>
     <string name="misnap_failure_reason_wrong_doc_check_back_ux2">Flip the check to scan the back</string>
     <string name="misnap_failure_reason_glare_ux2">Avoid glare on the document</string>
-
     <!-- For MiSnap priority hint messages -->
     <string name="misnap_priority_glare_ux2">Reduce glare</string>
     <string name="misnap_priority_busy_background_ux2">Use a solid background</string>
@@ -127,7 +119,6 @@
     <string name="misnap_priority_wrong_doc_generic_ux2">Wrong document suspected</string>
     <string name="misnap_priority_wrong_doc_check_back_expected_ux2">Flip check over</string>
     <string name="misnap_priority_wrong_doc_check_front_expected_ux2">Can\'t find account or routing number</string>
-
     <!--overlay screen strings-->
     <string name="misnap_ghost_image_remittance_ux2">Center payment stub here and wait. \n We\'ll take the photo for you</string>
     <string name="misnap_ghost_image_remittance_manual_ux2"><![CDATA[Center payment stub here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
@@ -149,24 +140,35 @@
     <string name="misnap_ghost_image_document_portrait_ux2">Center document here and wait. \n We\'ll take the photo for you</string>
     <string name="misnap_ghost_image_document_portrait_manual_ux2"><![CDATA[Center document here, then press <br> the <b><i>Snap Photo</i></b> button when ready]]></string>
     <string name="misnap_ghost_barcode_tooltip_ux2">Please scan the barcode on the back of the driver\'s document</string>
-
     <string name="flash_on_ux2">On</string>
     <string name="flash_off_ux2">Off</string>
     <string name="misnap_dont_show_again_ux2">Don\'t show this again</string>
-
     <string name="misnapWorkflowDocumentAnalysisFragmentSuccessViewLabel">Captured</string>
     <!-- end MiSnap-->
 
     <!-- MiVIP -->
-    <string name="video_detail_language_it">Italiano</string>
-    <string name="video_detail_language_es">Español</string>
-    <string name="video_mandatory_field">This field is mandatory</string>
+    <string name="custom_welcome_title">Confirm your identity</string>
+    <string name="custom_welcome_continue">Continue</string>
+    <string name="account_document_vc">Verifiable Credential</string>
+    <string name="verifiable_credential_name">Credential %s</string>
+    <string name="mipass_title">Biometric verification</string>
+    <string name="mipass_text">In order to use data stored in your wallet we need to verify your biometric</string>
+    <string name="mipass_btn_start">Start</string>
+    <string name="mipass_btn_cancel">Cancel</string>
+    <string name="video_unassisted_documents">Please select document type</string>
+    <string name="video_mandatory_field_phone">This field is mandatory</string>
+    <string name="video_notvalid_field_phone">Invalid phone, should be in a valid phone format</string>
+    <string name="video_mandatory_field_email">This field is mandatory</string>
+    <string name="video_notvalid_field_email">Invalid email, should be in a valid email format</string>
     <string name="video_no_documents_err">There is no document type allowed for this issuing country and request. This field is required.</string>
     <string name="request_manual">We\'re doing final checks.<br/>Completing our final manual checks can take a few minutes.</string>
+    <string name="main_screen_profile">Profile</string>
+    <string name="login_delete_description">Delete</string>
+    <string name="bioid_description">Unlock with finger</string>
+    <string name="menu_description">Application menu</string>
     <string name="gdpr_text"><![CDATA[<p><b>%s has asked Mitek to verify your ID.</b></p><p>To do this, Mitek will ask you to provide personal data including location, facial and document images. We will not share your personal data with any third party except <b>%s</b>.</p><br/><p>By clicking Agree and Continue you give your consent to the processing and sharing of your personal data including facial images. Please see our <a href="%s">terms</a> and <a href="%s">privacy policy</a>.</p>]]></string>
     <string name="poa_already_sumbitted">You already submitted:</string>
     <string name="poa_info_document_address_to_noname">Does this document have the applicant name and address</string>
-
     <string name="selfie_btn_max_attempts">Image error</string>
     <string name="selfie_max_attempts_text">Thank you for the Selfies! You can now move on to the next item.</string>
     <string name="video_intro_broadband_unassisted"> Prior to Initialing the process, please ensure a stable broadband connection.</string>
@@ -174,23 +176,23 @@
     <string name="video_intro_instruction_unassisted">During this video recording, we will:</string>
     <string name="video_speed_test_ok">Speed test passed</string>
     <string name="video_speed_test_fail">Speed test failed</string>
+    <string name="video_speed_test_retry">Retry speed test</string>
     <string name="video_intro_description_unassisted">The Video ID entails a video recording involving you and our automated video platform.</string>
     <string name="request_start_details_video_unassisted">Our automated interactive video platform will verify your identity</string>
     <string name="video_detail_text_unassisted">Before you continue with the video call, we need a few more details:</string>
-
     <string name="main_menu_profile">Profile</string>
     <string name="main_menu_share">Share my data</string>
-
     <string name="request_open_error">Not a valid identity request or the request already opened on a different device</string>
-
+    <string name="onboarding_business_button_title">Continue</string>
+    <string name="onboarding_business_title">You are now connected with %s</string>
+    <string name="onboarding_business_text">Your app is now linked and ready to verify your identity request from %s</string>
+    <string name="verification_code_text"><![CDATA[If you have a <b><font color=\"#1CADEC\">verification code</font></b> please enter it below]]></string>
     <string name="nfc_scan_nonfc_continue">Skip the %s scan</string>
     <string name="documents_nfc_error_nfc">To scan your %s hold your phone directly against the document as instructed</string>
-
     <string name="nfc_tip_label">%s scan tips:</string>
     <string name="nfc_tip1">Remove your phone case if it is thick or metallic</string>
     <string name="nfc_tip2">Hold your phone directly up against the %s until the scan is fully completed</string>
     <string name="nfc_tip3">If %s scan doesn\'t start - restart your phone</string>
-
     <string name="masking_main_text">Please apply a privacy filter to your document, follow the guidance of the sample provided below</string>
     <string name="masking_sample">Sample</string>
     <string name="masking_instruction1">Draw a line to cover the last 9 digits of the BSN number</string>
@@ -207,7 +209,6 @@
     <string name="masking_approve">Are you satisfied with the masking of your document?</string>
     <string name="masking_action">Continue</string>
     <string name="masking_skip">Cannot perform the task?</string>
-
     <string name="request_info_button_voice">Voice</string>
     <string name="voice_title">Add your voice</string>
     <string name="voice_text">By providing your voice samples, you consent to processing of the data by Mitek.</string>
@@ -215,7 +216,6 @@
     <string name="voice_verify">You need to capture a voice sample for verification. While recording read out the phrase shown on the screen loud and clear in a quiet room.</string>
     <string name="voice_enroll_check">In order to prevent fraud, do you want us to keep your voice for future authentications?</string>
     <string name="voice_action_button">Capture voice</string>
-
     <string name="request_code_title">Verification code</string>
     <string name="request_code_skip">I don\'t have verification code</string>
     <string name="request_code_paste">Paste from clipboard</string>
@@ -233,15 +233,12 @@
     <string name="request_start_details_documents">You can use 1 or more photo IDs</string>
     <string name="request_start_details_social">You can use 1 or more online profiles</string>
     <string name="request_start_details_selfie">We will guide you on how to take a selfie</string>
-
     <string name="approve_mipass_enroll">In order to prevent fraud, do you want us to keep your selfie for future authentications?</string>
     <string name="request_completed_button">Close</string>
     <string name="request_info_err_selfie">Retake selfie</string>
     <string name="request_info_err_selfie_manual">Retake selfie</string>
-
     <string name="settings_show_name_age">Name reveal in \'Prove My Age\'</string>
     <string name="settings_show_name_age_description">This will allow your name to be shown in the app\'s proof of age feature.</string>
-
     <string name="cancel_request_button">Don\'t confirm</string>
     <string name="cancel_request_title">Don\'t confirm</string>
     <string name="cancel_request_header">Don\'t confirm my identity</string>
@@ -252,22 +249,18 @@
     <string name="cancel_request_error">Something went wrong. Please try again later</string>
     <string name="cancel_request_status">This request has now been cancelled</string>
     <string name="history_request_cancelled">Request cancelled</string>
-
     <string name="bottom_menu_home">Home</string>
     <string name="bottom_menu_history">History</string>
     <string name="bottom_menu_settings">Settings</string>
     <string name="bottom_menu_about">About</string>
-
     <string name="my_id_title">My Identity</string>
     <string name="my_id_sources">Sources</string>
     <string name="my_id_edit">Edit</string>
-
     <string name="my_id_name">Name</string>
     <string name="my_id_dob">Date of birth</string>
     <string name="my_id_address">Address</string>
     <string name="my_id_phone">Phone</string>
     <string name="my_id_email">Email</string>
-
     <string name="my_id_edit_title">Edit My Identity</string>
     <string name="my_id_edit_text">MY ID SETTINGS</string>
     <string name="my_id_edit_name">Show name</string>
@@ -280,48 +273,33 @@
     <string name="my_id_edit_address_description">When selected address will be shown in My Identity. Set to off to hide address in My Identity</string>
     <string name="my_id_edit_phone_description">When selected phone will be shown in My Identity. Set to off to hide phone in My Identity</string>
     <string name="my_id_edit_email_description">When selected email will be shown in My Identity. Set to off to hide email in My Identity</string>
-
     <string name="my_id_sources_social">Digital identity</string>
-
     <string name="main_menu_button_new">Scan QR code</string>
-
     <string name="prove_age_title">Prove my age</string>
     <string name="prove_age_verified">VERIFIED WITH:</string>
     <string name="prove_age_show">Show screen to prove age</string>
     <string name="prove_age_reveal">Reveal document</string>
-
     <string name="account_document_number">Document Nr</string>
     <string name="history_continue_request">Continue request</string>
     <string name="history_request_completed">Request completed</string>
     <string name="history_request_failed">Request failed</string>
     <string name="history_request_expired">Request expired</string>
     <string name="account_document_stored">Stored at</string>
-
     <string name="notifications_title">Notifications</string>
-
     <string name="delete_notification">DELETE</string>
     <string name="undo_delete_notification">UNDO</string>
     <string name="delete_notification_text"><b>%s</b> notification removed</string>
-
     <string name="history_details_auth">On %s you authenticate to %s:</string>
-
     <string name="auth_confirm_text">Do you allow Mitek to authenticate you to %s. You will provide:</string>
     <string name="auth_confirm_allow">Authenticate</string>
     <string name="auth_confirm_deny">Cancel</string>
-
-    <string name="auth_err_phone">No verified phone found. Please verify your phone in My Account menu.</string>
     <string name="auth_err_nodata">No personal data stored. Please complete Mitek request before use it for authentication.</string>
     <string name="auth_err_general">Something went wrong. Please try again later.</string>
     <string name="nfc_disabled_alert">NFC disabled. Please enable NFC in device settings to get better outcome.</string>
     <string name="confirm_reuse_text"><b>%s</b> is requesting that you share your identity details, please select from the list below what you would like to share:</string>
-
-    <string name="main_menu_button_account">Show Identity</string>
-
     <string name="phone_menu">Your phone</string>
     <string name="phone_menu_add">Add phone</string>
-
     <string name="phone_add_text">We will send a mobile verification code to this number:</string>
-    <string name="phone_add_code">Send code</string>
     <string name="phone_replace_text">Your previous number will be replaced</string>
     <string name="phone_verify_error">Something went wrong. Please try again later</string>
     <string name="phone_enter_code">Enter code</string>
@@ -330,39 +308,26 @@
     <string name="phone_code_text">We\'ve sent a code to %s. It may take a few moments to arrive.</string>
     <string name="phone_verified_text">Your verified phone number:</string>
     <string name="phone">Phone</string>
-
     <string name="email_notification">Add your e-mail</string>
     <string name="phone_notification">Add your phone number</string>
-
-    <!--    /// FROM HERE CONTINUE-->
     <string name="email_menu">Your email</string>
     <string name="email_verified_text">Your verified email:</string>
     <string name="email_change">Change email</string>
     <string name="email_menu_add">Add email</string>
     <string name="email_add_text">We will send verification code to this email:</string>
     <string name="email_replace_text">Your previous email will be replaced</string>
-
     <string name="about_contact">Contact us</string>
-
     <string name="account_document_name">Name</string>
     <string name="account_document_address">Address</string>
-
     <string name="account_social_stored">Stored at</string>
-
     <string name="account_social_email">Email</string>
     <string name="account_social_name">Name</string>
-
-
     <string name="update_id_title">Update personal data</string>
     <string name="no_notifications">No notifications</string>
-
     <string name="documents_browse_image">Or use image from gallery</string>
     <string name="documents_browse_pdf">Upload PDF file</string>
-
     <string name="documents_error_button_continue">Continue</string>
-
-    <string name="selfie_done_continue">Continue</string>
-
+    <string name="selfie_done_continue">Check Progress</string>
     <string name="menu_open_banking">Bank Connect</string>
     <string name="open_banking_title">Bank Connect</string>
     <string name="open_banking_main_text">By connecting to your online bank account, you consent to processing of the data by Mitek.</string>
@@ -378,41 +343,23 @@
     <string name="account_open_banking_phones">Phones</string>
     <string name="account_open_banking_accounts">Accounts</string>
     <string name="account_open_banking_cards">Payment cards</string>
-
     <string name="documents_nfc_mandatory_error">Scanning NFC chip is set as mandatory in request for this document, but your device has no NFC support. You cannot add this document with current device.</string>
     <string name="documents_nfc_mandatory_text">Scanning chip is set as mandatory in request for this document</string>
-
     <string name="onboarding_main">Your Digital Identity</string>
-    <string name="onboarding_subtext">The easy and safe way to share your identity under Your Digital Identity Wallet</string>
     <string name="onboarding_terms_decline">Decline</string>
-    <string name="onboarding_continue">Continue</string>
     <string name="onboarding_start">Start</string>
     <string name="onboarding_terms_accept">Accept</string>
-    <string name="onboarding_done">Your app is activated</string>
-    <string name="onboarding_done_text">Thank you for setting up your Mitek app! You are now ready to start building you Digital Identity</string>
     <string name="onboarding_name">Let\'s get started</string>
-    <string name="onboarding_name_text">Please enter your <b>name</b> below</string>
-    <string name="onboarding_phone">Finally, give us your number</string>
-    <string name="onboarding_phone_text"><![CDATA[We need your <b><font color=\"#1CADEC\">mobile number</font></b> to send you a verification code]]></string>
-    <string name="onboarding_email">Great, now enter your email</string>
-    <string name="onboarding_email_text"><![CDATA[Please enter your <b><font color=\"#1CADEC\">email</font></b> below. We will send you a verification code]]></string>
-    <string name="onboarding_verify_text"><![CDATA[Please enter the <b><font color=\"#1CADEC\">5 digit code</font></b> we have sent to <b><font color=\"#1CADEC\">%s</font></b>]]></string>
-    <string name="onboarding_code_wrong">Code not valid</string>
     <string name="onboarding_pin">Create your own PIN</string>
     <string name="onboarding_pin_add"><![CDATA[Please create a memorable <b><font color=\"#1CADEC\">5-digit PIN.</font></b> You will need this PIN to log into the app.]]></string>
     <string name="onboarding_pin_confirm"><![CDATA[Please <b><font color=\"#1CADEC\">re-type</font></b> your 5 digit PIN]]></string>
     <string name="onboarding_pin_no_match"><![CDATA[PIN doesn\'t match. Please create a new <b><font color=\"#1CADEC\">5-digit PIN</font></b>]]></string>
-    <string name="onboarding_skip">I\'ll do it later</string>
-    <string name="onboarding_code">Enter verification code</string>
-
     <string name="qr_title">Scan Mitek QR code</string>
-
-    <!-- Current from DB -->
     <string name="about_about_us">About us</string>
     <string name="about_privacy">Privacy policy</string>
     <string name="about_terms">Terms &amp; Conditions</string>
-    <string name="about_title">About Mitek</string>
     <string name="about_version">Version:</string>
+    <string name="manual_document_capture">Press the capture button to take the photo</string>
     <string name="accepted_info_add_id">Add photo ID</string>
     <string name="accepted_info_add_poa">Add a proof of address</string>
     <string name="accepted_info_address_text"><![CDATA[<b>Proof of Address</b> any Bank, Utility, Phone, Insurance or Tax document that was issued within the last %s months and displays the date of issue, your name and current address.]]></string>
@@ -513,6 +460,8 @@
     <string name="documents_detail_tip3">Make sure it\'s in focus and without any glare or flash</string>
     <string name="documents_detail_tip_pro">Pro TIP: Center a document on a dark background</string>
     <string name="documents_detail_title">Add your %s</string>
+    <string name="documents_detail_title_front">Add front of %s</string>
+    <string name="documents_detail_title_back">Add back of %s</string>
     <string name="documents_error_1">Check there is no glare or white spots</string>
     <string name="documents_error_2">Avoid any shadows</string>
     <string name="documents_error_3">Place the document on a flat surface</string>
@@ -550,7 +499,7 @@
     <string name="history_title">Your history</string>
     <string name="id_button_status_back_missing">Back is missing</string>
     <string name="id_button_status_error">Something went wrong</string>
-    <string name="id_button_status_processing">processing...</string>
+    <string name="id_button_status_processing">processing…</string>
     <string name="id_button_status_review">Under review.</string>
     <string name="id_info_accepted_documents">Want to learn more about the documents we accept?</string>
     <string name="id_info_mandatory">Add mandatory photo ID</string>
@@ -568,7 +517,7 @@
     <string name="liveness_nod">Nod when ready</string>
     <string name="liveness_stay">Stay still</string>
     <string name="liveness_thank_you">Thank you!</string>
-    <string name="loading_screen_loading">Loading...</string>
+    <string name="loading_screen_loading">Loading…</string>
     <string name="login_code_set">PIN set. Use your PIN to log in</string>
     <string name="login_confirm_code">Please confirm PIN</string>
     <string name="login_enter_code">Please enter your PIN to sign in</string>
@@ -585,9 +534,8 @@
     <string name="main_menu_button_history">History</string>
     <string name="main_menu_button_settings">Settings</string>
     <string name="main_menu_title">Your Mitek options</string>
-    <string name="manual_document_capture">Press the capture button to take the photo</string>
     <string name="manual_selfie_detail_button_action">Start</string>
-    <string name="manual_selfie_detail_text">For a great selfie...</string>
+    <string name="manual_selfie_detail_text">For a great selfie…</string>
     <string name="manual_selfie_detail_title">Add a selfie</string>
     <string name="manual_selfie_done_text">Great that\'s your selfie done</string>
     <string name="manual_selfie_done_title">Your selfie</string>
@@ -598,8 +546,6 @@
     <string name="poa_info_continue">Continue</string>
     <string name="poa_info_document_address_to">Is this document addressed to <b>%s</b></string>
     <string name="poa_info_doi_after">The document was issued on or after <b>%s</b></string>
-    <string name="poa_info_doi_visible">Is a date of issue clearly visible?</string>
-    <string name="poa_info_older_than">Is this document no older than <b>%s</b></string>
     <string name="poa_info_select">Please select document type:</string>
     <string name="poa_info_select_text">Select a document:</string>
     <string name="poa_info_text">Please provide at least one proof of address document</string>
@@ -619,11 +565,11 @@
     <string name="request_info_completed">Thank you! <br/><b>%s</b> received your details</string>
     <string name="request_info_progress">Your Progress</string>
     <string name="request_info_social_accepted">Was successful</string>
-    <string name="request_info_text">We need you to provide the following to complete your identity verification.</string>
+    <string name="request_info_text">Hi %s, we need you to provide the following to complete your identity verification:</string>
     <string name="request_info_tip_title">Feeling a bit stuck?</string>
     <string name="request_info_title">Confirm your identity</string>
     <string name="selfie_detail_button_action">Start</string>
-    <string name="selfie_detail_text">For a great selfie...</string>
+    <string name="selfie_detail_text">For a great selfie…</string>
     <string name="selfie_detail_tip1">Take off your glasses, scarves, hats and anything covering your face</string>
     <string name="selfie_detail_tip2">Look straight into the camera</string>
     <string name="selfie_detail_tip3">Take a close up with your full head in focus</string>
@@ -713,6 +659,8 @@
     <string name="video_detail_language">Select video call language</string>
     <string name="video_detail_language_de">Deutsch</string>
     <string name="video_detail_language_en">English</string>
+    <string name="video_detail_language_it">Italiano</string>
+    <string name="video_detail_language_es">Español</string>
     <string name="video_detail_phone">Mobile phone number</string>
     <string name="video_detail_start">Start</string>
     <string name="video_detail_text">Our certified agent will verify your ID document over a video call. Before you continue, we need a few more details:</string>
@@ -735,5 +683,4 @@
     <string name="video_why_info3">Video call language: Select your preferred language for the video call with the certified agent.</string>
     <string name="video_why_info4">Mobile phone number: During the video verification, the agent will send an SMS to your mobile phone  with a unique code which is part of the verification process.</string>
     <string name="video_why_info5">Bandwidth test: Since video verification is done via a video call, you must have stable  internet connection to continue. Run the internet speed test to find out if your internet speed meets the minimum requirement.</string>
-
 </resources>
