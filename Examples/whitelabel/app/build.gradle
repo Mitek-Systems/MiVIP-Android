@@ -7,7 +7,7 @@ android {
 
     namespace "com.hooyu.whitelabel"
     defaultConfig {
-        applicationId "com.hooyu.android.us" // whitelabel
+        applicationId "com.hooyu.android.whitelabel" // whitelabel
         minSdk 24
         targetSdk 34
         versionCode 17
@@ -46,27 +46,31 @@ android {
 }
 
 dependencies {
-    // custom libs
+    // MiVIP library .aar files
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
-    def misnapVersion =  '5.6.0'
+    // MiSnap
+    def misnapVersion = '5.6.0'
     implementation "com.miteksystems.misnap:document:$misnapVersion"
     implementation "com.miteksystems.misnap:face:$misnapVersion"
     implementation "com.miteksystems.misnap:barcode:$misnapVersion"
     implementation "com.miteksystems.misnap:biometric:$misnapVersion"
     implementation "com.miteksystems.misnap:combined-nfc:$misnapVersion"
 
+    // Android CORE
     implementation 'androidx.core:core-ktx:1.3.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.8'
+    runtimeOnly group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: '1.6.0'
 
-    // App compat and UI things
+    // App compat and UI
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     implementation 'com.google.android.material:material:1.3.0'
 
+    // navigation framework
     def nav_version = '2.3.1'
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
@@ -75,20 +79,23 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.2.0")
 
-    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
-    api 'commons-codec:commons-codec:1.13'
-    api 'org.apache.commons:commons-lang3:3.9'
+    //
+    // if using .aar files directly - all dependencies must be added: Here are the required dependencies:
+    //
+
+    implementation 'commons-codec:commons-codec:1.13'
+    implementation 'org.apache.commons:commons-lang3:3.9'
 
     def moshiVersion = '1.10.0'
-    api "com.squareup.moshi:moshi-kotlin:$moshiVersion"
-    api("com.squareup.moshi:moshi-adapters:$moshiVersion")
+    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+    implementation("com.squareup.moshi:moshi-adapters:$moshiVersion")
 
     def retrofit2Version = '2.9.0'
-    api "com.squareup.retrofit2:converter-scalars:$retrofit2Version"
-    api "com.squareup.retrofit2:adapter-rxjava2:$retrofit2Version" // TODO remove?
-    api "com.squareup.retrofit2:converter-moshi:$retrofit2Version"
-    api 'com.squareup.okhttp3:logging-interceptor:4.3.1'
-    api 'org.conscrypt:conscrypt-android:2.2.1'
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit2Version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2Version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit2Version"
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.3.1'
+    implementation 'org.conscrypt:conscrypt-android:2.2.1'
 
     // CameraX core library using the camera2 implementation
     def camerax_version = '1.3.0'
@@ -100,29 +107,25 @@ dependencies {
     // stomp client
     implementation 'com.github.NaikSoftware:StompProtocolAndroid:1.6.4'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-
     // mlkit
-    implementation 'com.google.android.gms:play-services-mlkit-face-detection:16.1.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.3.7'
-    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.1.0'
-
+    implementation 'com.google.android.gms:play-services-mlkit-face-detection:17.1.0'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:18.0.1'
     // QR code generate
     implementation 'com.google.zxing:core:3.4.0'
     // country picker
     implementation 'com.hbb20:ccp:2.4.7'
     // image zoom
-    implementation 'com.github.chrisbanes:PhotoView:1.3.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
     // show pdf file
-    implementation 'com.github.barteksc:android-pdf-viewer:3.1.0-beta.1'
+    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.1'
     // code input
     implementation 'com.raycoarana.codeinputview:codeinputview:2.1.4'
     // barcode
-    api 'com.google.android.gms:play-services-vision:19.0.0'
-
-    // ML
-    api 'com.google.android.gms:play-services-mlkit-face-detection:17.1.0'
-    api 'com.google.android.gms:play-services-mlkit-text-recognition:18.0.1'
-
+    implementation 'com.google.android.gms:play-services-vision:19.0.0'
+    // phone numbers
+    api 'io.michaelrocks:libphonenumber-android:8.12.22'
     // totp
     implementation("dev.turingcomplete:kotlin-onetimepassword:2.2.0")
+
 }

@@ -4,7 +4,7 @@ buildscript {
     ext.kotlin_version = '1.8.10'
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
@@ -18,7 +18,7 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
         maven {
             // https://github.com/Mitek-Systems/MiSnap-Android
