@@ -24,7 +24,7 @@ SDK also includes wallet/account/history functionality.
 
 <center>
 
-![Screenshot 2024-02-22 at 12.13.15.png](images/files.png)
+![files](images/files.png)
 
 </center>
 
@@ -69,6 +69,29 @@ implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
         <color name="scanner_line">@color/hy_main_color</color>
 ```
 
+* Apply custom font - you can define custom font that will be used by SDK. 
+    * Add your font in _res/font_ folder
+    * add .xml file in _res/font_ folder:
+    ``` xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <font-family xmlns:android="http://schemas.android.com/apk/res/android">
+            <font
+            android:font="@font/FONT_FILE_NAME"
+            android:fontStyle="normal"
+            android:fontWeight="500" />
+        </font-family>
+    ```
+    * Define font famiily in _themes.xml_
+
+* Icons - you can apply custom icons to SDK by overwriting images in res folder:
+
+<center>
+
+![custom icons](images/custom_icons.png)
+
+</center>
+
+* Custom prints - you can change SDK prints by changing values in _strings.xml_
 
 ## Permissions for the main app
 in AndroidManifest.xml ensure that app has these permissions:
@@ -275,9 +298,9 @@ Additional MiSnap customisation is available as proxy from main app to MiSnap SD
 ```
 
 ## SDK files
-* MiVIP-api-3.5.1-release.aar - includes API calls and handle results. Size - 4.2MB
-* MiVIP-core-3.5.1-release.aar - implementation of active liveness and core functionality. Size - 254KB
-* MiVIP-sdk-3.5.1-release.aar - includes journey orchestration and UI. Size - 8.5MB
+* MiVIP-api-release.aar - includes API calls and handle results. Size - 4.2MB
+* MiVIP-core-release.aar - implementation of active liveness and core functionality. Size - 254KB
+* MiVIP-sdk-release.aar - includes journey orchestration and UI. Size - 8.6MB
 
 ## System Requirements
 
@@ -285,7 +308,7 @@ Additional MiSnap customisation is available as proxy from main app to MiSnap SD
 
 | Technology | version |
 | :--- | :---: |
-| MiSnap | 5.6.0 |
+| MiSnap | 5.6.1 |
 | Android Gradle Plugin | 8.3.0 |
 | Gradle | 8.4 |
 | Kotlin | 1.8.10 |

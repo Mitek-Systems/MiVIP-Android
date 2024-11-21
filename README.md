@@ -1,4 +1,4 @@
-# MiVIP SDK v3.6.3 for Android
+# MiVIP SDK v3.6.4 for Android
 
 
 MiVIP’s Native SDK is a fully orchestrated user interface and user journey delivered as an SDK for seamless integration into any native application. The functionality is replicated from the existing Web journey where the same orchestration and white-label customisations are applied, as configured in one centralised location via the web portal. The SDK is packaged together with Mitek’s capture technology, MiSnap. Mitek’s customers can benefit from both Mitek’s market leading capture experience combined with a completely pre-built dynamic user journey, all delivered in a single packaged SDK with low code integration for minimum integration effort and accelerated time to live.
@@ -12,7 +12,7 @@ MiVIP’s Native SDK is a fully orchestrated user interface and user journey del
 
 | Technology | version |
 | :--- | :---: |
-| MiSnap | 5.6.0 |
+| MiSnap | 5.6.1 |
 | Android Gradle Plugin | 8.3.0 |
 | Gradle | 8.4 |
 | Kotlin | 1.8.10 |
@@ -94,9 +94,9 @@ private val mivipActivityResult = registerForActivityResult(ActivityResultContra
 
 # SDKs Files and Sizes
 
-* MiVIP-api-3.5.1-release.aar - includes API calls and handle results. Size - 4.2MB
-* MiVIP-core-3.5.1-release.aar - implementation of active liveness and core functionality. Size - 254KB
-* MiVIP-sdk-3.5.1-release.aar - includes journey orchestration and UI. Size - 8.4MB
+* MiVIP-api-release.aar - includes API calls and handle results. Size - 4.2MB
+* MiVIP-core-release.aar - implementation of active liveness and core functionality. Size - 254KB
+* MiVIP-sdk-release.aar - includes journey orchestration and UI. Size - 8.4MB
 
 - - -
 
