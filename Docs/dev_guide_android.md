@@ -36,7 +36,7 @@ implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
 ## Configuration / customisation
 
-* MiVIP backend URL - define MiVIP instance URL _strings.xml_
+* MiVIP backend URL - define MiVIP instance URL _strings.xml_ . Note URL must end with slash (example ``` https://api.miteksystems.com/ ```)
 
 ``` xml
         <string name="mivip_url" translatable="false">_MIVIP_INSTANCE_URL_</string>
