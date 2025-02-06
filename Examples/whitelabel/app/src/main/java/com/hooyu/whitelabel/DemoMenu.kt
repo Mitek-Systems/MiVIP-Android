@@ -30,7 +30,7 @@ class DemoMenu : Fragment(R.layout.fragment_menu) {
                 Log.i("MIVIP", "Score result: $it")
             }
             res.request?.let {
-                Log.i("MIVIP", "Resuest: $it")
+                Log.i("MIVIP", "Request: $it")
             }
             res.error?.let {
                 Log.i("MIVIP", "Error: $it")
