@@ -13,6 +13,7 @@ Supported identity sources:
 * Attachments
 * Open banking
 * Voice
+* mDL (org.iso.18013.5.1.mDL) from Samsung Wallet
 
 SDK also includes wallet/account/history functionality.
 
@@ -33,6 +34,21 @@ SDK also includes wallet/account/history functionality.
 ```
 implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 ```
+
+## Samsung Wallet integration
+* Copy ```rp-sdk-1.02-release.aar``` to application libs folder
+* In AndroidManifest add query option:
+``` xml
+    <queries>
+        <package android:name="com.samsung.android.spay" />
+    </queries>
+```
+* In raw resource add properties file ```mivip.properties```
+```
+mt_samsung_wallet_production=*true for production, false for staging Samsung environment*
+mt_samsung_wallet_partner_id= *YOUR_SAMSUNG_WALLET_PARTNER_ID*
+```
+* [Samsung Wallet guide](https://developer.samsung.com/wallet/api_new/verifywith/overview.html)
 
 ## Configuration / customisation
 
@@ -308,13 +324,13 @@ Additional MiSnap customisation is available as proxy from main app to MiSnap SD
 
 | Technology | version |
 | :--- | :---: |
-| MiSnap | 5.6.1 |
+| MiSnap | 5.7.0 |
 | Android Gradle Plugin | 8.3.0 |
 | Gradle | 8.4 |
 | Kotlin | 1.8.10 |
 | CameraX | 1.3.0 |
 | JDK | 1.8 |
-| Android min API level | 24 |
+| Android min API level | 26 |
 | Android target API level | 34 |
 
 </center>

@@ -5,7 +5,7 @@
     <string name="mivip_url" translatable="false">MIVIP_URL</string>
 
 <!--    Тo use misnap capture functionality - you have to get a licence key for using it. -->
-    <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>
+    <string name="misnap_license" translatable="false">MISNAP_LICENSE</string>
 
     <!--    MiVIP / MiSnap SDK texts -->
     <!--    MiSnap Strings-->
@@ -146,6 +146,8 @@
     <!-- end MiSnap-->
 
     <!-- MiVIP -->
+    <string name="samsung_wallet_error_processing">We were not able to validate your electronic document. Please try again or capture a physical document.</string>
+    <string name="samsung_wallet_error_exception">We were not able to validate your electronic document. Please try again or capture a physical document.</string>
     <string name="custom_welcome_title">Confirm your identity</string>
     <string name="custom_welcome_continue">Continue</string>
     <string name="account_document_vc">Verifiable Credential</string>

@@ -9,7 +9,7 @@ android {
     namespace "com.hooyu.whitelabel"
     defaultConfig {
         applicationId "com.hooyu.android.whitelabel"
-        minSdk 24
+        minSdk 26
         targetSdk 34
         versionCode 17
         versionName "1.0"
@@ -25,6 +25,7 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
@@ -63,6 +64,11 @@ dependencies {
     implementation "com.miteksystems.misnap:barcode:$misnapVersion"
     implementation "com.miteksystems.misnap:biometric:$misnapVersion"
     implementation "com.miteksystems.misnap:combined-nfc:$misnapVersion"
+
+    // Samsung wallet
+    implementation("org.bouncycastle:bcprov-jdk15on:1.70")
+    implementation("com.upokecenter:cbor:4.0.1")
+    implementation("com.augustcellars.cose:cose-java:1.1.0")
 
     // Android CORE
     implementation 'androidx.core:core-ktx:1.3.1'
