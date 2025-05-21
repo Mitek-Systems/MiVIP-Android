@@ -58,7 +58,7 @@ dependencies {
 //    implementation "com.miteksystems.mivip:mivip-sdk:$miVipVersion"
 
     // MiSnap
-    def misnapVersion = '5.6.1'
+    def misnapVersion = '5.8.1'
     implementation "com.miteksystems.misnap:document:$misnapVersion"
     implementation "com.miteksystems.misnap:face:$misnapVersion"
     implementation "com.miteksystems.misnap:barcode:$misnapVersion"

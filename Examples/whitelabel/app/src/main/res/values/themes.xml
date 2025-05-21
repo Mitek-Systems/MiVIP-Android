@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
         <item name="fontFamily">@font/custom_font</item>
         <item name="colorPrimary">@color/hy_header_color_start</item>
         <item name="colorPrimaryDark">@color/hy_header_color_start</item>
