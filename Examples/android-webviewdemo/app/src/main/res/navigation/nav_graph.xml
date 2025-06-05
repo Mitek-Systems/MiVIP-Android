@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="MainFragment"
+        android:label="@string/main_title">
+
+        <action
+            android:id="@+id/main_to_qr"
+            app:destination="@id/qrcode_reader_fragment" />
+
+        <action
+            android:id="@+id/main_to_webview"
+            app:destination="@id/webview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/qrcode_reader_fragment"
+        android:name="QRReaderFragment"
+        android:label="@string/qr_title">
+
+        <action
+            android:id="@+id/qrcode_reader_to_webview"
+            app:destination="@id/webview"
+            app:popUpTo="@+id/qrcode_reader_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/webview"
+        android:name="WebViewFragment">
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

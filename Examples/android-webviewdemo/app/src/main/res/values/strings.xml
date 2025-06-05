@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">webview-demo</string>
+    <string name="main_title">MiVIP webview demo</string>
+    <string name="qr_title">Scan QR code</string>
+    <string name="main_url_label">MiVIP request URL:</string>
+    <string name="main_url_button">GO</string>
+    <string name="main_qr_label">Or scan MiVIP request QR code</string>
+    <string name="main_qr_button">Scan QR code</string>
+</resources>

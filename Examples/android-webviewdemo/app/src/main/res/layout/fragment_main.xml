@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/main_url_label"
+        android:textColor="@color/hy_orange"
+        android:textSize="20sp" />
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp" />
+    <EditText
+        android:id="@+id/url_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+    <include
+        android:id="@+id/btn_main_url"
+        layout="@layout/button_url" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/main_qr_label"
+        android:textColor="@color/hy_orange"
+        android:textSize="20sp" />
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp" />
+    <include
+        android:id="@+id/btn_main_qr"
+        layout="@layout/button_qr" />
+
+</LinearLayout>
