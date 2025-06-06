@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="demo_webview_images" path="Android/data/com.hooyu.webview_demo/files/Pictures" />
+    <external-files-path name="selfie_images" path="/" />
+</paths>

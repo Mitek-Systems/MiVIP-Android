@@ -20,6 +20,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import android.webkit.*
 import androidx.core.content.ContextCompat.checkSelfPermission
+import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.hooyu.webview_demo.MainActivity
@@ -231,7 +232,10 @@ class WebViewFragment : Fragment(R.layout.fragment_webview) {
 
                 if (imageFile != null) {
                     cameraImagePath = CAMERA_PHOTO_PATH_POSTFIX + imageFile.absolutePath
-                    captureImageIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imageFile))
+                    val appId = requireActivity().application.packageName
+                    val uri = FileProvider.getUriForFile(requireActivity(), "$appId.fileProvider", imageFile)
+                    captureImageIntent.putExtra(MediaStore.EXTRA_OUTPUT, uri)
+
                 } else {
                     captureImageIntent = null
                 }
