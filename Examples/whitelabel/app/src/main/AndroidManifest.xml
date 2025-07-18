@@ -51,7 +51,7 @@
         tools:replace="android:theme,android:icon,android:allowBackup">
         <activity
             android:name="com.hooyu.whitelabel.DemoActivity"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -59,7 +59,7 @@
         </activity>
 
         <activity
-            android:name="com.hooyu.android.HooyuActivity"
+            android:name="com.hooyu.android.MiVIPActivity"
             android:screenOrientation="unspecified" />
     </application>
 
