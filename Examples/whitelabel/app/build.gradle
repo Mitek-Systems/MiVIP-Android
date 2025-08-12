@@ -132,8 +132,6 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
     // show pdf file
     implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.1'
-    // code input
-    implementation 'com.raycoarana.codeinputview:codeinputview:2.1.4'
     // barcode
     implementation 'com.google.android.gms:play-services-vision:19.0.0'
     // phone numbers
