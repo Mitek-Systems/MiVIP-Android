@@ -55,7 +55,13 @@ mt_samsung_wallet_partner_id= *YOUR_SAMSUNG_WALLET_PARTNER_ID*
 * MiVIP backend URL - define MiVIP instance URL _strings.xml_ . Note URL must end with slash (example ``` https://api.miteksystems.com/ ```)
 
 ``` xml
-        <string name="mivip_url" translatable="false">_MIVIP_INSTANCE_URL_</string>
+<string name="mivip_url" translatable="false">_MIVIP_INSTANCE_URL_</string>
+```
+
+* MiSnap license - define your license key in _strings.xml_ key _misnap_license_
+
+``` xml
+<string name="misnap_license" translatable="false">_MISNAP_LICENSE_</string>
 ```
 
 * Company logo - add in _res/drawable_ your logo image and name it _mitek_logo_
