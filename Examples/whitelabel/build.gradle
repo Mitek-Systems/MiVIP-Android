@@ -25,8 +25,8 @@ allprojects {
             // https://github.com/Mitek-Systems/MiSnap-Android
             url = uri('https://maven.pkg.github.com/mitek-systems/misnap-android')
             credentials {
-                username = ''
-                password = ''
+                username = 'user'
+                password = 'password'
             }
         }
     }

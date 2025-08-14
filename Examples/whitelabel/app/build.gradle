@@ -8,7 +8,7 @@ android {
 
     namespace "com.hooyu.whitelabel"
     defaultConfig {
-        applicationId "com.hooyu.android.whitelabel"
+        applicationId "com.hooyu.android.us" // whitelabel
         minSdk 26
         targetSdk 34
         versionCode 17
@@ -45,6 +45,11 @@ android {
     buildFeatures {
         viewBinding true
     }
+    packaging {
+        resources {
+            pickFirsts += ['META-INF/versions/9/OSGI-INF/MANIFEST.MF']
+        }
+    }
 }
 
 dependencies {
@@ -58,7 +63,7 @@ dependencies {
 //    implementation "com.miteksystems.mivip:mivip-sdk:$miVipVersion"
 
     // MiSnap
-    def misnapVersion = '5.8.1'
+    def misnapVersion = '5.8.2'
     implementation "com.miteksystems.misnap:document:$misnapVersion"
     implementation "com.miteksystems.misnap:face:$misnapVersion"
     implementation "com.miteksystems.misnap:barcode:$misnapVersion"
@@ -66,7 +71,7 @@ dependencies {
     implementation "com.miteksystems.misnap:combined-nfc:$misnapVersion"
 
     // Samsung wallet
-    implementation("org.bouncycastle:bcprov-jdk15on:1.70")
+    implementation("org.bouncycastle:bcprov-jdk18on:1.81")
     implementation("com.upokecenter:cbor:4.0.1")
     implementation("com.augustcellars.cose:cose-java:1.1.0")
 
