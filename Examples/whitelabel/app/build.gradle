@@ -4,13 +4,13 @@ apply plugin: 'kotlin-parcelize'
 apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
-    compileSdk 34
+    compileSdk 35
 
     namespace "com.hooyu.whitelabel"
     defaultConfig {
         applicationId "com.hooyu.android.us" // whitelabel
         minSdk 26
-        targetSdk 34
+        targetSdk 35
         versionCode 17
         versionName "1.0"
 
@@ -57,7 +57,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
     // using MiVIP as a maven dependency
-//    def miVipVersion = '3.6.1'
+//    def miVipVersion = '3.7.0'
 //    implementation "com.miteksystems.mivip:mivip-core:$miVipVersion"
 //    implementation "com.miteksystems.mivip:mivip-api:$miVipVersion"
 //    implementation "com.miteksystems.mivip:mivip-sdk:$miVipVersion"
@@ -87,6 +87,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
     implementation 'com.google.android.material:material:1.3.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01"
 
     // navigation framework
     def nav_version = '2.3.1'
@@ -115,13 +116,6 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.3.1'
     implementation 'org.conscrypt:conscrypt-android:2.2.1'
 
-    // CameraX core library using the camera2 implementation
-    def camerax_version = '1.4.0'
-    implementation "androidx.camera:camera-core:${camerax_version}"
-    implementation "androidx.camera:camera-camera2:${camerax_version}"
-    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
-    implementation "androidx.camera:camera-view:1.0.0-alpha29"
-
     // stomp client
     implementation 'com.github.NaikSoftware:StompProtocolAndroid:1.6.6'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
@@ -135,8 +129,6 @@ dependencies {
     implementation 'com.hbb20:ccp:2.4.7'
     // image zoom
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
-    // show pdf file
-    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.1'
     // barcode
     implementation 'com.google.android.gms:play-services-vision:19.0.0'
     // phone numbers

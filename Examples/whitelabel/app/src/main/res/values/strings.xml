@@ -6,6 +6,7 @@
 
 <!--    Тo use misnap capture functionality - you have to get a licence key for using it. -->
     <string name="misnap_license" translatable="false">YOUR_MISNAP_LICENSE_KEY_HERE</string>
+    
 
     <!--    MiVIP / MiSnap SDK texts -->
     <!--    MiSnap Strings-->

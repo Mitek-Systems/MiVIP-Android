@@ -331,12 +331,11 @@ Additional MiSnap customisation is available as proxy from main app to MiSnap SD
 | Technology | version |
 | :--- | :---: |
 | MiSnap | 5.8.2 |
-| Android Gradle Plugin | 8.3.0 |
-| Gradle | 8.4 |
-| Kotlin | 1.8.10 |
-| CameraX | 1.3.0 |
+| Android Gradle Plugin | 8.5.1 |
+| Gradle | 8.7 |
+| Kotlin | 1.9.24 |
 | JDK | 1.8 |
 | Android min API level | 26 |
-| Android target API level | 34 |
+| Android target API level | 35 |
 
 </center>

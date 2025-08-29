@@ -1,4 +1,4 @@
-# MiVIP SDK v3.6.14 for Android
+# MiVIP SDK v3.7.0 for Android
 
 
 MiVIP’s Native SDK is a fully orchestrated user interface and user journey delivered as an SDK for seamless integration into any native application. The functionality is replicated from the existing Web journey where the same orchestration and white-label customisations are applied, as configured in one centralised location via the web portal. The SDK is packaged together with Mitek’s capture technology, MiSnap. Mitek’s customers can benefit from both Mitek’s market leading capture experience combined with a completely pre-built dynamic user journey, all delivered in a single packaged SDK with low code integration for minimum integration effort and accelerated time to live.
@@ -13,13 +13,12 @@ MiVIP’s Native SDK is a fully orchestrated user interface and user journey del
 | Technology | version |
 | :--- | :---: |
 | MiSnap | 5.8.2 |
-| Android Gradle Plugin | 8.3.0 |
-| Gradle | 8.4 |
-| Kotlin | 1.8.10 |
-| CameraX | 1.3.0 |
+| Android Gradle Plugin | 8.5.1 |
+| Gradle | 8.7 |
+| Kotlin | 1.9.24 |
 | JDK | 1.8 |
 | Android min API level | 26 |
-| Android target API level | 34 |
+| Android target API level | 35 |
 
 </center>
 
@@ -95,7 +94,6 @@ private val mivipActivityResult = registerForActivityResult(ActivityResultContra
 # SDKs Files and Sizes
 
 * MiVIP-api-release.aar - includes API calls and handle results. Size - 4.2MB
-* MiVIP-core-release.aar - implementation of active liveness and core functionality. Size - 254KB
 * MiVIP-sdk-release.aar - includes journey orchestration and UI. Size - 8.4MB
 * rp-sdk-1.02-release.aar - Samsung Wallet SDK for RP. Size - 41KB
 
@@ -107,9 +105,6 @@ private val mivipActivityResult = registerForActivityResult(ActivityResultContra
 - - -
 
 # Third-Party Licenses
-
-### [3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause)
-* #### [OpenCV](https://github.com/opencv/opencv/blob/4.4.0/LICENSE)
 
 ### [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 * #### [Apache Commons Imaging](https://github.com/apache/commons-imaging/blob/master/LICENSE.txt)
