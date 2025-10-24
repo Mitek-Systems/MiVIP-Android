@@ -157,7 +157,7 @@ Add also following features in AndroidManifest.xml:
         btn_scan_qr.setOnClickListener {
             val intent = Intent(requireActivity(), MiVIPActivity::class.java).apply {
                 putExtra(MiVIPActivity.SDK_FLAG, true) // mark we are in SDK mode
-                putExtra(MiVIPActivity.ACTION_FLAG, com.hooyu.android.HooyuActivity.ACTION_QR) // go to QR screen
+                putExtra(MiVIPActivity.ACTION_FLAG, MiVIPActivity.ACTION_QR) // go to QR screen
                 putExtra(MiVIPActivity.SOUNDS_DISABLED, true) // default is False
                 putExtra(MiVIPActivity.REUSABLE_ENABLED, false) // default is False
                 putExtra(MiVIPActivity.ENABLE_SCREENSHOTS, true) // default is false
