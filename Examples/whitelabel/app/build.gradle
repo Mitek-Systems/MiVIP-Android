@@ -56,14 +56,8 @@ dependencies {
     // MiVIP library .aar files
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
-    // using MiVIP as a maven dependency
-//    def miVipVersion = '3.7.0'
-//    implementation "com.miteksystems.mivip:mivip-core:$miVipVersion"
-//    implementation "com.miteksystems.mivip:mivip-api:$miVipVersion"
-//    implementation "com.miteksystems.mivip:mivip-sdk:$miVipVersion"
-
     // MiSnap
-    def misnapVersion = '5.8.2'
+    def misnapVersion = '5.9.0'
     implementation "com.miteksystems.misnap:document:$misnapVersion"
     implementation "com.miteksystems.misnap:face:$misnapVersion"
     implementation "com.miteksystems.misnap:barcode:$misnapVersion"

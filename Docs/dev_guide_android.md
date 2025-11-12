@@ -8,7 +8,6 @@ Supported identity sources:
 * Documents - POI/POA - guided capture (using MiSnap), upload document image or image + PDF for POA
 * Document NFC reading - using MiSnap intelligent NFC orchestration
 * Payment card
-* Video - Assisted / Unassisted
 * Signature
 * Attachments
 * Open banking
@@ -330,7 +329,7 @@ Additional MiSnap customisation is available as proxy from main app to MiSnap SD
 
 | Technology | version |
 | :--- | :---: |
-| MiSnap | 5.8.2 |
+| MiSnap | 5.9.0 |
 | Android Gradle Plugin | 8.5.1 |
 | Gradle | 8.7 |
 | Kotlin | 1.9.24 |
