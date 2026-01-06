@@ -329,7 +329,7 @@ Additional MiSnap customisation is available as proxy from main app to MiSnap SD
 
 | Technology | version |
 | :--- | :---: |
-| MiSnap | 5.9.0 |
+| MiSnap | 5.9.1 |
 | Android Gradle Plugin | 8.5.1 |
 | Gradle | 8.7 |
 | Kotlin | 1.9.24 |

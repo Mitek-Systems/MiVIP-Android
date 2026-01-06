@@ -1,4 +1,4 @@
-# MiVIP SDK v3.8.0 for Android
+# MiVIP SDK v3.8.1 for Android
 
 
 MiVIP’s Native SDK is a fully orchestrated user interface and user journey delivered as an SDK for seamless integration into any native application. The functionality is replicated from the existing Web journey where the same orchestration and white-label customisations are applied, as configured in one centralised location via the web portal. The SDK is packaged together with Mitek’s capture technology, MiSnap. Mitek’s customers can benefit from both Mitek’s market leading capture experience combined with a completely pre-built dynamic user journey, all delivered in a single packaged SDK with low code integration for minimum integration effort and accelerated time to live.
@@ -12,7 +12,7 @@ MiVIP’s Native SDK is a fully orchestrated user interface and user journey del
 
 | Technology | version |
 | :--- | :---: |
-| MiSnap | 5.9.0 |
+| MiSnap | 5.9.1 |
 | Android Gradle Plugin | 8.5.1 |
 | Gradle | 8.7 |
 | Kotlin | 1.9.24 |

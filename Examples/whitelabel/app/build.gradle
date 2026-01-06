@@ -57,7 +57,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
     // MiSnap
-    def misnapVersion = '5.9.0'
+    def misnapVersion = '5.9.1'
     implementation "com.miteksystems.misnap:document:$misnapVersion"
     implementation "com.miteksystems.misnap:face:$misnapVersion"
     implementation "com.miteksystems.misnap:barcode:$misnapVersion"
